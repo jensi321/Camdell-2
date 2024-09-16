@@ -1,0 +1,6831 @@
+body {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: normal;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    outline: none;
+}
+
+.heading {
+    display: block;
+}
+
+.heading h3 {
+    font-size: 18.22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif !important;
+
+}
+
+.button {
+    display: block;
+    font-weight: 600;
+    color: #002408;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 7.43px;
+    background-color: #A9D5B2;
+    text-transform: capitalize;
+    box-shadow: none;
+    border: none;
+    font-family: "Poppins", sans-serif !important;
+
+}
+
+.button:hover {
+    color: #002408;
+}
+
+
+.ruppes-icon {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.error {
+    font-size: 9px;
+    color: #FF0000;
+}
+
+.success {
+    font-size: 10px;
+    color: green;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+/* Header Start  */
+
+.navbar {
+    display: block;
+    padding: 0;
+}
+
+.navbar .top {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.navbar .top .header-inner,
+.navbar .top .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.navbar .top .img-content {
+    display: block;
+    width: 145px;
+    margin: 0 auto;
+}
+
+.navbar .top .logo img {
+    width: 100%;
+}
+
+.navbar .top .header-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .search {
+    display: block;
+    position: relative;
+    width: 323px;
+    margin-right: 10px;
+}
+
+.navbar .search input {
+    border: 1px solid #8A8787;
+    width: 100%;
+    border-radius: 35px;
+    padding: 10px;
+    padding-left: 30px;
+    font-size: 12px;
+    color: #6C6565;
+    outline: none;
+}
+
+.navbar .search button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: none;
+    background: none;
+    box-shadow: none;
+    font-size: 12px;
+    color: #6C6565;
+}
+
+.navbar .points {
+    display: flex;
+    border-radius: 39.54px;
+    background-color: #002408;
+    padding: 8px 20px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .points img {
+    width: 22px;
+    height: 22px;
+}
+
+.navbar .points p {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: center;
+    color: #fff;
+    padding-left: 5px;
+}
+
+.navbar .login-dropdown.dropdown {
+    width: 208px;
+    height: 48px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .login-dropdown.dropdown button {
+    background-color: #fff;
+    color: #1D1D1D;
+    border-radius: 35.3px;
+    font-size: 14px;
+    padding: 6px 10px;
+    font-weight: 600;
+    align-items: center;
+    border: 1px solid #8A8787;
+    width: 100%;
+}
+
+
+.navbar .login-dropdown.dropdown button::after {
+    border: none;
+    content: '\f107';
+    font-family: 'Font Awesome 6 Free';
+    margin-left: 10px;
+    vertical-align: middle;
+    font-size: 17px;
+}
+
+.btn:first-child:active {
+    color: #1D1D1D;
+    background-color: #fff;
+    border: 1px solid #8A8787;
+
+}
+
+.navbar .login-dropdown .dropdown-item.active,
+.navbar .login-dropdown .dropdown-item:active {
+    color: #002408 !important;
+    text-decoration: none;
+    background-color: transparent !important;
+}
+
+.navbar .login-dropdown .dropdown-item {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.navbar .scanner,
+.navbar .subscribe {
+    display: block;
+}
+
+.navbar .scanner a,
+.navbar .subscribe a {
+    display: block;
+    font-size: 22px;
+    height: 28px;
+    color: #291F1D;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.navbar .loction-info {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.navbar .loction-info span:first-child {
+    font-size: 20px;
+    color: #E31837;
+}
+
+.navbar .loction-info p {
+    font-size: 12px;
+    margin-left: 5px;
+    max-width: 130px;
+    word-break: break-all;
+}
+
+.navbar .avtar-img img {
+    width: 52px;
+    height: 52px;
+    position: relative;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.navbar .avtar-img .dropdown-toggle::after {
+    display: none;
+}
+
+.navbar .avtar-img .btn.show,
+.navbar .avtar-img .btn {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .avtar-img .dropdown-menu[data-bs-popper] {
+    left: -100% !important;
+}
+
+.navbar .avtar-img .dropdown-item.active,
+.navbar .avtar-img .dropdown-item:active,
+.navbar .avtar-img .dropdown-item {
+    color: #000000;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+
+.navbar .bottom {
+    background-color: #A9D5B2;
+}
+
+
+
+.navbar .bottom a {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 5.47px;
+    padding: 15px 35px !important;
+    text-align: center;
+    margin: 10px 0;
+    color: #002408;
+}
+
+.navbar .bottom .navbar-nav>a:not(:last-child),
+.navbar .bottom .navbar-nav .dropdown-toggle {
+    border-right: 1.8px solid #08755B;
+}
+
+.navbar .bottom .navbar-nav .dropdown-toggle::after {
+    display: none;
+}
+
+.navbar .bottom .navbar .dropdown-menu.show {
+    display: block;
+    background-color: #D2F9DA;
+    border: 1px solid #A9D5B2
+}
+
+.navbar .bottom .dropdown-menu {
+    background: #D2F9DA;
+    border-radius: 0px 0px 20px 20px;
+    margin-top: 0;
+}
+
+.navbar .bottom .dropdown-menu>a {
+    display: block;
+    font-family: "Poppins", sans-serif !important;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+    padding: 10px 10px !important;
+    text-transform: capitalize;
+}
+
+.navbar .bottom .header-info-bottom {
+    display: none;
+}
+
+.navbar .navbar-toggler {
+    padding-right: 10px;
+    border: none;
+    position: relative;
+    z-index: 111;
+}
+
+.navbar-toggler:focus,
+.dropdown-item:active,
+.dropdown-item:focus,
+.dropdown-item:hover {
+    box-shadow: none;
+    border: none;
+    background-color: transparent;
+}
+
+.navbar .bottom .search,
+.navbar .bottom .login-dropdown.dropdown {
+    display: none;
+}
+
+
+/* Header End*/
+
+/* Delete Account Strat */
+.delete-account-outer {
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.delete-account-outer h3 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+.delete-account-outer p {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 32px;
+    margin-bottom: 25px;
+}
+
+.delete-account-outer a {
+    padding: 10px 60px;
+    background-color: #002408;
+    color: #fff;
+    border-radius: 30px;
+}
+
+/* Delete Account End */
+
+/* Slider Start */
+.slider-outer {
+    display: block;
+    padding-top: 10px;
+}
+
+.slider-outer .slider-inner {
+    display: block;
+}
+
+.slider-outer .slider-inner img {
+    border-radius: 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slider-outer .slick-dots li button::before {
+    background-color: #B39B5D;
+    border: 1px solid #B39B5D !important;
+    opacity: 1;
+    width: 12px;
+    height: 12px;
+    content: '';
+    border-radius: 50%;
+
+}
+
+.slider-outer .slick-dots li.slick-active button::before,
+.slider-outer .slick-dots li:hover button::before {
+    background-color: #291F1D;
+    border: 1px solid #B39B5D !important;
+}
+
+.slider-outer .slick-arrow {
+    display: none !important;
+}
+
+
+
+/* Slider End */
+
+
+
+/* CATEGORIES Start */
+.category-outer {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.category-outer .container {
+    padding: 0 40px !important;
+}
+
+.category-outer .category-inner {
+    display: block;
+
+}
+
+.category-outer .item .item-inner {
+    display: block;
+    border: 1px solid #EFEEEE;
+    border-radius: 12px;
+    text-align: center;
+    height: 124px;
+    padding: 10px;
+    margin-right: 10px;
+    transition: all 0.5s ease;
+    margin-right: 10px;
+}
+
+
+
+.category-outer .item .item-inner:hover {
+    border: none;
+    background: #11A966;
+
+
+}
+
+.category-outer .img-content {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #FFF;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.category-outer .img-content img {
+    width: 100%;
+}
+
+.category-outer .text-content {
+    padding-top: 10px;
+}
+.category-outer .text-content p {
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #291F1D;
+
+}
+
+.category-outer .item:hover .text-content p {
+    color: #FFF;
+}
+
+.category-outer .owl-theme .owl-nav,
+.deal-outer .owl-theme .owl-nav {
+    display: block !important;
+    position: absolute;
+    top: 30%;
+    transform: translate(0, -50%);
+    right: 0;
+    left: 0;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    left: -25px;
+    position: absolute;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    right: -25px;
+    position: absolute;
+}
+
+.owl-carousel .owl-nav button span {
+    display: none;
+}
+
+.owl-carousel .owl-nav button.owl-prev::after {
+    content: '\f104';
+}
+
+.owl-carousel .owl-nav button.owl-next::after {
+    content: '\f105';
+}
+
+.owl-nav button::after {
+    display: block;
+    font-size: 16px;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 700;
+    color: #291F1D;
+}
+
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+    background: transparent !important;
+    color: #291F1D !important;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif !important;
+}
+
+/* CATEGORIES End */
+
+
+/* Best Store Sale Start */
+.cashback-outer .container {
+    padding: 0 40px !important;
+}
+
+.cashback-outer .item {
+    margin-bottom: 20px;
+    margin-right: 15px;
+}
+
+.cashback-outer .heading {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cashback-outer .heading a {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.cashback-outer .item .item-inner,
+.cupon-description-outer .item .item-inner,
+.cupon-offer-outer .item .item-inner
+{
+    border-radius: 7.02px;
+    border: 1.4px solid #E8E8E8;
+    box-shadow: 0px 0px 3.16px 0px #B0B0B040;
+    position: relative;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.cashback-outer .offer-sale,
+.cupon-offer-outer .offer-sale,
+.cupon-description-outer .offer-sale {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    padding-left: 5px;
+    padding-right: 20px;
+    background-color: #E2D6A8;
+    color: #2D2C2C;
+    clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif !important;
+}
+
+.cashback-outer .img-content,
+.cupon-offer-outer .img-content {
+    height: 45px;
+    margin: 20px 0;
+}
+
+.cashback-outer img,
+.cupon-offer-outer img {
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.cashback-outer .rewards,
+.cupon-offer-outer .rewards,
+.cupon-description-outer .rewards {
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+    font-size: 10px;
+    font-weight: 600;
+    text-align: center;
+    color: #291F1D;
+    font-family: "Poppins", sans-serif !important;
+}
+
+.cashback-outer .button,
+.cupon-offer-outer .button,
+.cupon-description-outer .button {
+    font-size: 12px;
+}
+
+.slick-prev::before {
+    content: '\f104';
+}
+
+.slick-next::before {
+    content: '\f105';
+}
+
+.slick-next::before,
+.slick-prev::before {
+    display: block;
+    font-size: 16px;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 700;
+    color: #291F1D;
+}
+
+/* Best Store Sale End */
+
+/* Exclusive Start */
+.exclusive-outer {
+    display: block;
+    background-color: #f1f1f1;
+    margin: 40px 0;
+    padding: 25px 0;
+}
+
+.exclusive-outer .exclusive-inner {
+    display: block;
+
+}
+
+.exclusive-outer .exclusive-inner .item {
+    display: block;
+    padding: 0 10px;
+}
+
+.exclusive-outer .exclusive-inner .item .item-inner {
+    display: block;
+    position: relative;
+
+}
+
+.exclusive-outer .exclusive-inner img {
+    width: 100%;
+}
+
+.exclusive-outer .exclusive-inner .text-content {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000a4;
+    color: #fff;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.exclusive-outer .exclusive-inner span {
+    color: #fb7a2e;
+}
+
+
+/* Exclusive End */
+
+/* Tranding Start */
+.tranding-outer {
+    display: block;
+    background: #F3FFFE;
+    padding: 50px 0;
+
+}
+
+.tranding-outer .tranding-inner {
+    display: block;
+}
+
+.tranding-outer .heading {
+    padding-bottom: 10px;
+}
+
+.tranding-outer .container {
+    padding: 0 40px !important;
+}
+
+
+
+.no-coupons-message {
+    padding: 70px 0;
+    text-align: center;
+}
+
+.tranding-outer .item-inner,
+.cupon-outer .item-inner,
+.cashback-store .item-inner {
+
+    border-radius: 13.92px;
+    border: 3px solid #F1F1F1;
+    background-color: #fff;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.tranding-outer .item-inner {
+    display: block;
+}
+
+.tranding-outer .img-content,
+.cashback-store .img-content,
+.cupon-outer .img-content {
+    height: 45px;
+    margin: 20px 0;
+}
+
+.tranding-outer img,
+.cashback-store img,
+.cupon-outer img {
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.tranding-outer p,
+.cashback-store p,
+.cupon-outer p {
+    font-weight: 600;
+    text-align: center;
+    color: #291F1D;
+    margin-bottom: 10px;
+    padding: 0 15px;
+    font-family: "Poppins", sans-serif !important;
+}
+
+
+.tranding-outer .cupon-code-button,
+.cashback-store .cupon-code-button,
+.cupon-outer .cupon-code-button {
+    display: block;
+    background-color: #002408;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: right;
+    position: relative;
+    border: 2px dashed #A9D5B2;
+    font-family: "Poppins", sans-serif !important;
+
+}
+
+.tranding-outer .cupon,
+.cashback-store .cupon,
+.cupon-outer .cupon {
+    clip-path: polygon(75% 0, 100% 100%, 0 100%, 0 0);
+    padding: 10px 10px;
+    /* padding-right: 80px; */
+    display: inline;
+    top: 0;
+    bottom: 0;
+    right: 30px;
+    text-align: left;
+    color: #002408;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 10px 0 0 10px;
+    left: 0;
+    position: absolute;
+    background-color: #A9D5B2;
+}
+
+/* Tranding End */
+
+/* Popular Store start */
+.store-outer {
+    display: block;
+    margin: 40px 0;
+}
+
+.store-outer .store-inner {
+    display: block;
+}
+
+.store-outer .store-inner>.heading h3 {
+    font-size: 30px;
+}
+
+.store-outer img {
+    width: 100%;
+}
+
+
+.store-outer .left .inner {
+    border: 1px solid #D3EAE1;
+    border-radius: 10px;
+    background-color: #F0FEF9;
+    padding: 30px 50px;
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+.store-outer .left .inner .text-inner {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.store-outer .our-partner .img-content {
+    height: 40px;
+}
+
+.store-outer .our-partner .img-content img {
+    width: 100%;
+    height: 100%;
+}
+
+.store-outer .left .text-content {
+    padding-top: 20px;
+}
+
+.store-outer .left .text-content p {
+    color: #6D4C3D;
+}
+
+.store-outer .left .text-content a {
+    margin-top: 10px;
+    color: #fff;
+    background-color: #11A966;
+}
+
+.store-outer .right .inner {
+    border: 1px solid #038667;
+    border-radius: 10px;
+    height: 100%;
+}
+
+
+.our-partner .item .item-inner {
+    display: block;
+    padding: 10px;
+}
+
+.our-partner .item .item-inner .img-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 119px;
+    margin: 0 auto;
+}
+
+.our-partner .item .item-inner .img-content img {
+    width: auto;
+    height: 35px;
+}
+
+.store-outer .right .our-partner .slick-arrow {
+    display: none !important;
+}
+
+/* Popular Store End */
+
+/* Voucher start */
+.voucher-outer {
+    display: block;
+}
+
+.voucher-outer .voucher-inner {
+    display: block;
+}
+
+.voucher-outer .container {
+    padding: 0 40px !important;
+}
+
+
+.voucher-outer .voucher-inner .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.voucher-outer .voucher-inner .heading h3 {
+    display: inline;
+}
+
+.voucher-outer .heading a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.voucher-outer .item,
+.vouchercupon-outer .item,
+.voucherpage-outer .item {
+    margin-bottom: 20px;
+}
+
+.voucher-outer .item {
+    padding-right: 25px;
+}
+
+.wishlist-outer .voucher-outer .item {
+    padding-right: 10px;
+}
+
+.voucher-outer .item-inner,
+.vouchercupon-outer .item-inner,
+.voucherpage-outer .item-inner {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 24px;
+    padding: 10px 40px;
+    background-color: #A9D5B2;
+    mask: radial-gradient(20px at 51px, #0000 calc(100% - 1px), #000) calc(-1*50px);
+}
+
+.voucher-outer .content,
+.vouchercupon-outer .content,
+.voucherpage-outer .content {
+    display: flex;
+    padding: 10px 40px;
+
+}
+
+.voucher-outer .item-inner .text-content,
+.vouchercupon-outer .item-inner .text-content,
+.voucherpage-outer .item-inner .text-content {
+    width: 70%;
+    padding-right: 10px;
+}
+
+.voucher-outer .item-inner .img-content,
+.vouchercupon-outer .item-inner .img-content,
+.voucherpage-outer .item-inner .img-content {
+    width: 30%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.voucher-outer img,
+.vouchercupon-outer img,
+.voucherpage-outer img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.voucher-outer .item-inner h3,
+.vouchercupon-outer .item-inner h3,
+.voucherpage-outer .item-inner h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #002408;
+}
+
+.voucher-outer .item:nth-child(2n) .item-inner h3,
+.voucherpage-outer .item:nth-child(2n) .item-inner h3,
+.voucher-outer .item:nth-child(2n) .item-inner span,
+.voucherpage-outer .item:nth-child(2n) .item-inner span {
+    color: #fff;
+}
+
+.voucher-outer .item-inner span,
+.vouchercupon-outer .item-inner span,
+.voucherpage-outer .item-inner span {
+    font-size: 13px;
+    font-weight: 600;
+    color: #E31837;
+}
+
+.voucher-outer .item-inner .text-content p.cashback,
+.vouchercupon-outer .item-inner .text-content p.cashback,
+.voucherpage-outer .item-inner .text-content p.cashback {
+    font-size: 10px;
+    font-weight: 500;
+    padding-bottom: 12px;
+    padding-top: 4px;
+    color: #046851;
+
+}
+
+.voucher-outer .item:nth-child(2n) .item-inner p.cashback,
+.voucherpage-outer .item:nth-child(2n) .item-inner p.cashback {
+    color: #FF8702;
+}
+
+.voucher-outer .item-inner .link-button,
+.vouchercupon-outer .item-inner .link-button,
+.voucherpage-outer .item-inner .link-button {
+
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 5px;
+
+}
+
+.voucher-outer .item-inner .link-button a,
+.vouchercupon-outer .item-inner .link-button a,
+.voucherpage-outer .item-inner .link-button a {
+    padding: 6px 26px;
+    display: inline;
+    font-size: 12px;
+    background-color: #002408;
+    color: #fff;
+}
+
+.voucher-outer .item:nth-child(2n) .item-inner .link-button a,
+.voucherpage-outer .item:nth-child(2n) .item-inner .link-button a {
+    background-color: #fff;
+    color: #002408;
+}
+
+
+
+/* Voucher  End*/
+
+/* Subscribe Start */
+.subscribe-outer {
+    display: block;
+    margin: 40px 0;
+}
+
+.subscribe-inner {
+    margin: 0 100px;
+    background-color: #F6E7CB;
+    border: 1px solid #BDAD8E;
+    border-radius: 15px;
+}
+
+.subscribe-outer .img-content {
+    display: block;
+    text-align: right;
+}
+
+.subscribe-outer .img-content img {
+    width: 90%;
+    vertical-align: bottom;
+}
+
+
+.subscribe-outer .text-content {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-left: 40px;
+}
+
+.subscribe-outer .heading {
+    margin-top: 10px;
+}
+
+.subscribe-outer input {
+    width: 100%;
+    display: block;
+    border: 1px solid #C5C5C5;
+    border-radius: 50px;
+    padding: 10px;
+    font-weight: 600;
+    outline: none;
+}
+
+.subscribe-outer .button {
+    display: inline-block;
+    padding: 10px 40px;
+    color: #fff;
+    background-color: #11A966;
+    margin-top: 25px;
+}
+
+/* Subscribe End */
+
+/* Deal of Day Start */
+.deal-outer {
+    display: block;
+    background-color: #F3FFFE;
+    padding: 50px 0;
+}
+
+.deal-outer .container {
+    padding: 0 40px !important;
+}
+
+.deal-outer .deal-inner {
+    display: block;
+}
+
+.deal-outer .deal-inner .heading {
+    padding-bottom: 10px;
+}
+
+.deal-outer .deal-inner .item {
+    border: 1px solid #C5C0C0;
+    background-color: #fff;
+    padding: 20px;
+    margin-right: 15px;
+    border-radius: 10px;
+
+}
+
+.deal-outer .deal-inner .text-content {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.deal-outer .deal-inner .img-content {
+    width: 100%;
+    height: 135PX;
+    margin: 20px auto;
+}
+
+.deal-outer .deal-inner .img-content img {
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+
+.deal-outer .deal-inner .price {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+.deal-outer .deal-inner .price strike {
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+/* Deal of Day End */
+
+/* Footer Start  */
+
+footer {
+    display: block;
+    background-color: #A9D5B2;
+}
+
+footer .footer-inner {
+    position: relative;
+}
+
+footer .top {
+    padding: 35px 51px;
+    padding-bottom: 0px;
+}
+
+footer .item {
+    margin-bottom: 20px;
+}
+
+footer .logo-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .footer-logo {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer .footer-logo img {
+    width: 200px;
+}
+
+footer .app-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .footer-heading {
+    display: block;
+    text-align: left;
+}
+
+footer .footer-heading h4 {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    padding-bottom: 10px;
+    color: #002408;
+}
+
+footer .soical-icon-list {
+    border-radius: 7.38px;
+    margin-bottom: 15px;
+}
+
+footer .icons {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+}
+
+footer .icons li {
+    border-radius: 50%;
+    padding: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .icons li:not(:last-child) {
+    margin-right: 10PX;
+}
+
+footer .icons li a {
+    font-size: 20px;
+    color: #101010;
+    display: block;
+    text-align: center;
+    line-height: 1px;
+}
+
+footer .soical-icon-list img {
+    width: 75px;
+    height: 75px;
+}
+
+
+footer .footer-menu li {
+    padding: 5px 0;
+}
+
+footer .footer-menu li:first-child {
+    padding-top: 0;
+}
+
+footer .footer-menu li a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #002408;
+
+}
+
+
+footer .input-groups {
+    display: flex;
+}
+
+footer .item input {
+    width: 70%;
+    height: 47.16px;
+    padding: 10px;
+    border-radius: 24px;
+    border: 1px solid #002408;
+    background-color: #A9D5B2;
+}
+
+footer .input-groups .button {
+    width: 30%;
+    background-color: #002408;
+    color: #fff;
+    border-radius: 24px;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+
+footer .item p {
+    font-size: 11px;
+    font-weight: 600;
+    padding-top: 10px;
+    color: #0C0B0B;
+
+}
+
+
+/* Footer Bottom */
+footer .bottom {
+    display: block;
+    border-top: 3px solid #002408;
+}
+
+footer .bottom .bottom-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 85px;
+}
+
+footer .bottom p {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 0;
+}
+
+footer .bottom ul {
+    display: flex;
+}
+
+footer .bottom ul li {
+    position: relative;
+}
+
+footer .bottom ul li:first-child {
+    margin-right: 10px;
+    border-right: 2px solid #002408;
+    padding-right: 10px;
+}
+
+footer .bottom ul li a {
+    color: #002408;
+    font-size: 14px;
+    font-weight: 500;
+}
+.market-btn {
+    display: inline-block;
+    padding: 0.3125rem 0.875rem;
+    padding-left: 2.8125rem;
+    -webkit-transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+    transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+    border: 1px solid #000;
+    background-position: center left 0.75rem;
+    background-color: #000;
+    background-size: 1.5rem 1.5rem;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    margin: 0 5px;
+    border-radius: 4px;
+}
+.market-btn .market-button-title {
+    display: block;
+    color: #fff;
+    font-size: 10px;
+}
+.market-btn .market-button-subtitle {
+    display: block;
+    margin-bottom: 1px;
+    color: #fff;
+    font-size: 6px;
+}
+
+.apple-btn {
+    background-image: url(../Image/apple.png)
+}
+.google-btn {
+    background-image: url(../Image/google-play.png);
+}
+
+/* Footer Bottom */
+
+/* Footer End */
+
+/* Sign In Model Start*/
+
+
+
+.login-outer,
+.signup-outer {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+.login-outer .login-inner,
+.signup-outer .signup-inner {
+    margin: 0;
+    position: relative;
+}
+
+
+.login-outer .left,
+.signup-outer .left {
+    background: #18A567;
+    border-radius: 10px 0 0 10px;
+}
+
+.login-outer .right,
+.signup-outer .right {
+    background: #fff;
+    border-radius: 0 10px 10px 0;
+    padding: 20px 15px;
+}
+
+.login-outer img,
+.signup-outer img {
+    width: 100%;
+}
+
+.login-outer .right .inner,
+.signup-outer .right .inner {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.login-outer .heading h3,
+.signup-outer .heading h3 {
+    font-size: 21.46px;
+    font-weight: 600;
+    color: #291F1D;
+    padding-bottom: 10px;
+}
+
+.login-outer .inputgroup,
+.signup-outer .inputgroup {
+    margin-bottom: 10px;
+}
+
+.login-outer form .inputgroup input,
+.signup-outer form .inputgroup input,
+.signup-outer form input[type='text'] {
+    display: block;
+    border: 1px solid #B4B4B4;
+    border-radius: 50px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 5px;
+    outline: none;
+    font-size: 12px;
+}
+
+
+
+.signup-outer input::-webkit-outer-spin-button,
+.signup-outer input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.signup-outer form input[type='number'] {
+    appearance: textfield;
+}
+
+.login-outer .privacy-check,
+.signup-outer .privacy-check {
+    display: flex;
+    margin-bottom: 18px;
+}
+
+.login-outer .privacy-check input[type="checkbox"],
+.signup-outer .privacy-check input[type="checkbox"] {
+    position: relative;
+    height: 10px;
+    width: 10px;
+    padding: 8px !important;
+    appearance: none;
+    cursor: pointer;
+    border: 1px solid #11A966;
+    border-radius: 3px;
+    top: 3px;
+    margin: 0;
+    margin-right: 5px;
+}
+
+.login-outer .privacy-check input[type="checkbox"]:checked,
+.signup-outer .privacy-check input[type="checkbox"]:checked {
+    background-color: #11A966;
+    border: 1px solid #11A966;
+}
+
+
+.login-outer .privacy-check input[type="checkbox"]:checked::before,
+.signup-outer .privacy-check input[type="checkbox"]:checked::before {
+    content: "\f00c";
+    position: absolute;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 700;
+    top: 2px;
+    color: #fff;
+    left: 3px;
+    font-size: 12px;
+}
+
+.login-outer .privacy-check label,
+.signup-outer .privacy-check label {
+    font-size: 10px;
+    color: #A6A6A6;
+    text-align: center;
+    font-weight: 600;
+}
+
+.login-outer .button,
+.signup-outer .button {
+    background: #11A966;
+    color: #fff;
+    width: 100%;
+}
+
+.login-outer .right>button,
+.signup-outer .right>button {
+    position: absolute;
+    display: inline;
+    top: 10px;
+    right: 10px;
+    background: none;
+    box-shadow: none;
+    z-index: 11;
+    border: none;
+}
+
+.merchant-login .img-content,
+.operator-login .img-content {
+    position: relative;
+    height: 400px;
+    top: 60%;
+    transform: translate(0, -50%);
+}
+
+.signup-outer .name-group,
+.signup-outer .otp-group {
+    display: flex;
+    align-items: center;
+}
+
+.signup-outer .name-group input:first-child,
+.signup-outer .otp-group input:first-child {
+    margin-right: 10px;
+}
+
+.signup-outer .heading h3 {
+    margin: 0;
+}
+
+.signup-outer form input {
+    padding: 6px !important;
+    margin-bottom: 8px !important;
+}
+
+.signup-outer .otp-group input {
+    width: 50% !important;
+}
+
+
+
+.signup-outer .otp-group .button {
+    width: 50% !important;
+    background-color: #A9D5B2;
+    color: #002408;
+    border-radius: 50px;
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    box-shadow: none;
+}
+
+.signup-outer .privacy-check {
+    padding-top: 5px;
+    margin-bottom: 15px;
+}
+
+.login-outer .sign-up,
+.signup-outer .sign-in {
+    padding: 10px 0;
+    font-size: 10px;
+    font-weight: 700;
+    text-align: center;
+    color: #A99696;
+}
+
+.login-outer .sign-up a,
+.signup-outer .sign-in a {
+    color: #038667;
+}
+
+
+
+/* Sign In Model End*/
+
+/* Referral Id Start */
+.referral-modal-outer .heading {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.referral-modal-outer .left .img-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.referral-modal-outer form {
+    text-align: center;
+}
+
+.referral-modal-outer input {
+    display: block;
+    background-color: #F3F3F3;
+    border: 1px solid #C3C3C3;
+    color: #000;
+    border-radius: 13px !important;
+    padding: 15px !important;
+}
+
+.referral-modal-outer .inputgroup {
+    margin-bottom: 30px;
+}
+
+.referral-modal-outer .button {
+    display: inline;
+    background-color: #A9D5B2;
+    color: #002408;
+    padding: 10px 70px;
+    border-radius: 20px;
+}
+
+/* Referral Id End */
+
+/* Location model Start */
+.location-outer {
+    display: block;
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 15px;
+}
+
+.location-outer .location-inner {
+    display: block;
+    padding: 20px;
+}
+
+.location-outer .icon {
+    display: block;
+    font-size: 24px;
+    color: #000000;
+}
+
+.location-outer h3 {
+    color: #000;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.location-outer .input-group {
+    width: 100%;
+    border: 1px solid #BBBBBB;
+    background-color: #F8F8F8;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #575757;
+}
+
+.location-outer .input-group span {
+    font-size: 18px;
+    margin-right: 12px;
+}
+
+.location-outer .input-group input {
+    border: none;
+    box-shadow: none;
+    outline: none;
+    background-color: transparent;
+    font-weight: 600;
+}
+
+.location-outer span.or {
+    display: block;
+    font-size: 24.13px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.location-outer a {
+    font-size: 18.36px;
+    font-weight: 600;
+    color: #E31837;
+
+}
+
+.location-outer .button-group {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-outer .border-button {
+    width: 50%;
+    background-color: #F8F8F8;
+    border: 1px solid #BBBBBB;
+    color: #575757;
+    border-radius: 18px;
+    padding: 10px 14px;
+    margin-right: 5px;
+}
+
+.location-outer .button {
+    width: 50%;
+    background-color: #002408;
+    border: 1px solid #BBBBBB;
+    color: #FFF;
+    border-radius: 18px;
+    padding: 10px 14px;
+    margin-right: 5px;
+}
+
+/* Location model End */
+
+/* Subscription Model Start */
+.modal-dialog:has(.sub-model-outer) {
+    display: block;
+}
+
+.sub-model-outer {
+	display: block;
+	width: 25%;
+	margin: 0 auto;
+	background: linear-gradient(106.13deg, #D73B3F 0%, #E7543B 100%);
+	color: #fff;
+	padding: 15px;
+	border-radius: 10px;
+	position: fixed;
+	bottom: 5%;
+	right: 2%;
+}
+
+
+.sub-model-outer .sub-model-inner {
+    display: block;
+}
+
+.sub-model-outer .all-sub {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sub-model-outer .all-sub h4 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.sub-model-outer .all-sub a {
+    font-size: 13.87px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.sub-model-outer .img-content {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.sub-model-outer .img-content img {
+    width: 20%;
+}
+
+.sub-model-outer .img-content h3 {
+    font-size: 24.96px;
+    font-weight: 700;
+}
+
+.sub-model-outer .img-content span {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.sub-model-outer .date {
+    display: flex;
+    font-size: 13px;
+    font-weight: 400;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+
+}
+
+.sub-model-outer .cupon-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 400;
+
+}
+
+.sub-model-outer .cupon-info a {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #000;
+
+}
+
+/* Subscription Model End */
+/* Scanner Start */
+
+
+
+.scaner-outer {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+    background-image: url(../Image/bg.png);
+    background-position: center;
+    background-size: cover;
+    padding: 15px;
+    border: 1px dashed #fff;
+    border-radius: 26px;
+    color: #fff;
+}
+
+.scaner-outer .img-content img {
+    width: 80% !important;
+    margin: 0 auto;
+}
+
+.scaner-outer .logo-content {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.scaner-outer .logo-content img {
+    width: 180px !important;
+}
+
+
+.scaner-outer .content-outer {
+    height: 350px;
+  align-items: center;
+  justify-content: center;
+}
+
+.scaner-outer .content-outer .content {
+	width: 85%;
+}
+
+.scaner-outer .code {
+    display: block;
+    position: relative;
+    padding: 20px 0;
+    color: #fff;
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.scaner-outer .code span {
+    font-size: 18px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.scaner-outer .date-id {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.scaner-outer .expiration,
+.scaner-outer .referelid {
+    width: 50%;
+}
+
+.scaner-outer .date-id span {
+    font-size: 17.25px;
+    font-weight: 700;
+}
+
+.scaner-outer .date-id h4 {
+    font-size: 19px;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+
+
+.scaner-outer .custoumer-name h3 {
+    font-size: 34.5px;
+    font-weight: 400;
+    margin-top: 20px;
+
+}
+
+.scaner-outer .owl-theme .owl-dots .owl-dot span {
+    background-color: #909090;
+}
+
+.scaner-outer .owl-theme .owl-dots .owl-dot.active span {
+    background-color: #fff;
+}
+
+
+/* Scanner End */
+
+/* Model Start */
+.modal-dialog {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #00000040;
+}
+
+/* .modal-dialog:has(.scaner-outer),
+.modal-dialog:has(.merchant-login),
+.modal-dialog:has(.operator-login),
+.modal-dialog:has(.loyalty-point-modal),
+.modal-dialog:has(.trackmodal-outer),
+.modal-dialog:has(.change-password-outer),
+.modal-dialog:has(.sub-terms-outer),
+.modal-dialog:has(.loyaltipoints-outer),
+.modal-dialog:has(.cupon-code-outer),
+.modal-dialog:has(.login-outer)
+ {
+    display: flex;
+    align-items: center;
+} */
+
+.modal-dialog:has(.loyalty-point-modal),
+.modal-dialog:has(.trackmodal-outer) {
+    background: transparent;
+}
+
+/* {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+} */
+
+.modal-content:has(.sub-terms-outer) {
+    height: 350px;
+    overflow-y: auto;
+    width: 25%;
+    margin: 0 auto;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.modal-content {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+}
+
+/* Model End */
+
+/* Page-Banner Start */
+.page-banner {
+    display: block;
+    background-image: url(../Image/pagebg.png);
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: cover;
+    text-align: center;
+}
+
+.page-banner .page-inner {
+    display: block;
+    padding: 20px 0;
+}
+
+.page-banner .page-inner h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.page-banner .page-inner p {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Page-Banner End */
+
+/* Cupon Description Strat */
+.cupon-outer {
+    display: block;
+    padding: 30PX 0px;
+}
+
+.cupon-outer .cupon-inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cupon-outer .cupon-inner .item {
+    width: 20%;
+    margin-bottom: 10px;
+}
+
+.cupon-outer .item-inner {
+    display: block;
+    margin: 0;
+}
+
+.coupontab.ant-tabs>.ant-tabs-nav {
+    background: #F7EFE4 !important;
+
+}
+
+.ant-tabs-top>.ant-tabs-nav .ant-tabs-ink-bar,
+.ant-tabs-top>.ant-tabs-nav::before {
+    display: none;
+}
+
+.coupontab.ant-tabs .ant-tabs-tab .ant-tabs-tab-btn {
+    padding: 5PX 30PX;
+}
+
+.coupontab.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn,
+.coupontab.ant-tabs .ant-tabs-tab:hover .ant-tabs-tab-btn {
+    color: #fff;
+    background-color: #038667;
+    border-radius: 20px;
+}
+
+.coupontab.ant-tabs .ant-tabs-tab {
+    font-size: 14px;
+    font-weight: 600;
+    color: #291F1D;
+    margin-left: 10px;
+
+}
+
+/* -------------------------------------------------------------- */
+.cupon-description-outer {
+    display: block;
+    margin: 30px 0;
+}
+
+.cupon-description-outer .cupon-description-inner {
+    display: block;
+}
+
+.cupon-description-outer .cupon-description-inner .heading {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.cupon-description-outer .heading h3 {
+    display: inline;
+    font-size: 22px;
+    font-weight: 600;
+
+}
+
+.cupon-description-outer .heading .button {
+    display: inline;
+    background-color: #038667;
+    color: #fff;
+    padding: 8px 24px;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+.cupon-description-outer .img-cupon-content {
+    margin-bottom: 30px;
+}
+
+.cupon-description-outer .img-group img {
+    width: 100%;
+    height: 135px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.cupon-description-outer .img-group .img-content:first-child {
+    margin-bottom: 30px;
+}
+
+.cupon-description-outer  .slider-img{
+        position:relative;
+}
+
+.cupon-description-outer .slider-img .wishlist-icon 
+{
+    position:absolute;
+    top: 20px;
+    right: 150px;
+}
+.cupon-description-outer .slider-img .wishlist-icon a
+{
+    color: #000;
+    font-size: 20px;
+}
+
+.cupon-description-outer .slider-img .img-item img {
+    width: 100%;
+    height: 350px;
+    border-radius: 20px;
+}
+
+.cupon-description-outer .slick-arrow {
+    display: none !important;
+}
+
+.cupon-description-outer .slick-dots li button::before {
+    background-color: #B39B5D;
+    border: 1px solid #B39B5D !important;
+    opacity: 1;
+    width: 12px;
+    height: 12px;
+    content: '';
+    border-radius: 50%;
+}
+
+
+.cupon-description-outer .slick-dots li.slick-active button::before,
+.cupon-description-outer .slick-dots li:hover button::before {
+    background-color: #291F1D;
+    border: 1px solid #B39B5D !important;
+}
+
+
+/* Cupon Css */
+
+.cupon-description-outer .offer-sale {
+    color: #fff;
+    background-color: #291F1D;
+}
+
+
+.cupon-description-outer .code-button {
+    display: block;
+    text-align: center;
+
+}
+
+.cupon-description-outer .code-button a {
+    background-color: #11A966;
+    color: #fff;
+    display: block;
+    border-radius: 12px;
+    padding: 10px 20px;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 22.84px;
+    font-weight: 600;
+}
+
+.cupon-description-outer .item .img-content {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.cupon-description-outer .item .img-content img {
+    width: auto;
+    height: 40px;
+}
+
+
+
+
+.cupon-description-outer .note {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    color: #E31837;
+    padding-bottom: 30px;
+    position: relative;
+    padding-top: 15px;
+}
+
+.cupon-description-outer .note::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border: 1px solid #E2E2E2
+}
+
+.cupon-description-outer .coupon-user-warning {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #E31837;
+    padding: 20px 0;
+}
+
+.cupon-description-outer .heading h4 {
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    margin: 0;
+
+}
+
+.cupon-description-outer .services-info {
+    padding: 30px 0;
+}
+
+.cupon-description-outer .services-info li {
+    margin-bottom: 20PX;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
+.cupon-description-outer .services-info li:last-child {
+    width: 100%;
+
+}
+
+.cupon-description-outer .description {
+    margin-bottom: 20px;
+
+}
+
+.cupon-description-outer .description p {
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+
+.cupon-description-outer .terms-condition ul {
+    list-style: disc;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+.cupon-description-outer .terms-condition li {
+    padding-bottom: 15px;
+    font-size: 16px;
+}
+
+.cupon-description-outer .terms-condition li::marker {
+    font-size: 1.8em;
+    line-height: 0.1;
+}
+
+.cupon-description-outer .terms-condition p {
+    font-size: 16px;
+}
+
+.cupon-description-outer .item .item-inner {
+    margin-bottom: 20px;
+}
+
+.terms-condition .item {
+    margin-bottom: 20px;
+}
+
+
+/* Reating Start */
+
+.review-outer {
+    display: block;
+    width: 22%;
+    margin: 0 auto;
+    background-color: #002408;
+    color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+.review-outer p {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.review-outer .rating {
+    padding-bottom: 30px;
+}
+
+.review-outer .ant-rate-star {
+    font-size: 30px;
+}
+
+.review-outer .ant-rate-star.ant-rate-star-full div {
+    color: #F55B03;
+}
+
+.review-outer .ant-rate-star.ant-rate-star-zero div {
+    color: #D3D3D3;
+}
+
+.review-outer .submit-button {
+    margin-bottom: 15px;
+}
+
+.review-outer a {
+    display: inline;
+    border-radius: 20px;
+    padding: 10px 60px;
+}
+
+/* Reating End */
+
+/* Terms-condition popup */
+.sub-terms-outer {
+    display: block;
+}
+
+.sub-terms-outer .heading h3 {
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.sub-terms-outer p {
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+/* Cupon Description End */
+
+/* Subscription Plan Start */
+.sub-plan-outer {
+    display: block;
+    width: 100%;
+    background-image: url(../Image/bg-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.sub-plan-outer .heading h3 {
+    font-size: 26px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif !important;
+}
+
+.sub-plan-outer .item .item-inner {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 18px;
+}
+
+.sub-plan-outer .item .item-inner h3 {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 21.41px;
+    font-weight: 800;
+
+}
+
+.sub-plan-outer .img-content {
+    height: 50px;
+}
+
+.sub-plan-outer .item img {
+    width: auto;
+    height: 100%;
+}
+
+.sub-plan-outer .rupees {
+    font-size: 24.71px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif !important;
+
+}
+
+
+
+.sub-plan-outer .monthly-plan {
+    font-size: 10px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif !important;
+
+}
+
+.sub-plan-outer ul {
+    display: block;
+}
+
+.sub-plan-outer ul li {
+    display: block;
+    padding: 6px 0;
+    font-family: "Poppins", sans-serif !important;
+
+    font-size: 12px;
+    font-weight: 500;
+
+}
+
+.sub-plan-outer ul li span {
+    padding: 0 5px;
+}
+
+.sub-plan-outer .button {
+    color: #fff;
+    margin-top: 10px;
+}
+
+/* Subscription Plan End */
+
+/* Payment Details  Start*/
+
+.pyment-detail-outer {
+    display: block;
+    padding: 40px 0;
+}
+
+.pyment-detail-outer .pyment-detail-inner {
+    display: block;
+    width: 767px;
+    border: 1px solid #D6D6D6;
+    border-radius: 21px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 3px 1px 11px 1px #73737340;
+
+}
+
+.pyment-detail-outer .pyment-detail-inner .wallet-amount {
+    background-color: #A9D4B2;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.pyment-detail-outer .wallet-amount p {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.pyment-detail-outer .wallet-amount .amount {
+    font-size: 38.23px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pyment-detail-outer .wallet-amount .amount a {
+    font-size: 11px;
+    font-weight: 800;
+    color: #fff;
+    background-color: #002408;
+    border-radius: 20px;
+    padding: 7px 18px;
+}
+
+
+
+
+.pyment-detail-outer .payment-details {
+    padding: 20px 0;
+}
+
+.pyment-detail-outer .payment-details h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.pyment-detail-outer .payment-details p {
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.pyment-detail-outer .payment-details .line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #C6C5C5;
+    margin: 10px 0;
+}
+
+.pyment-detail-outer .premium {
+    padding: 15px;
+    border: 1px solid #A9D4B2;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.pyment-detail-outer .premium .img-content {
+    width: 50%;
+    height: 90px;
+    text-align: center;
+}
+
+.pyment-detail-outer .premium img {
+    width: auto;
+    height: 100%;
+}
+
+.pyment-detail-outer .premium .text-content {
+    width: 50%;
+}
+
+.pyment-detail-outer .premium h3 {
+    font-size: 30.85px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #002408;
+}
+
+.pyment-detail-outer .premium span {
+    font-size: 15.32px;
+    font-weight: 600;
+    color: #002408;
+}
+
+.pyment-detail-outer .premium .ruppes span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.pyment-detail-outer .premium .ruppes {
+    font-size: 26px;
+    font-weight: 600;
+    color: #002408;
+
+}
+
+.pyment-detail-outer .promocode {
+    display: block;
+    padding-top: 20px;
+}
+
+.pyment-detail-outer .promocode p {
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.pyment-detail-outer .promocode select {
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    background-color: transparent;
+    border: none;
+    border-radius: none;
+    color: #000000;
+}
+
+.pyment-detail-outer .promocode option {
+    font-size: 14px;
+
+}
+
+.pyment-detail-outer .promocode input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #D7D7D7;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.pyment-detail-outer .promocode .button {
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    display: block;
+    width: 100%;
+}
+
+.pyment-detail-outer .loyalty-points {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #D7D7D7;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.pyment-detail-outer .img-content {
+    padding: 10px;
+}
+
+.pyment-detail-outer .loyalty-points .img-content img {
+    width: 30px;
+    height: 30px;
+}
+
+.pyment-detail-outer .loyalty-points span {
+    font-size: 16.75px;
+    font-weight: 700;
+}
+
+.pyment-detail-outer .loyalty-points button {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    font-size: 19.1px;
+    font-weight: 700;
+}
+
+.pyment-detail-outer .loyalty-points .count-number {
+    padding: 0 10px;
+    font-size: 19.1px;
+    font-weight: 700;
+}
+
+/* Payment Details  End*/
+
+/* Get Cupon Code Popup */
+.cupon-code-outer {
+    width: 30%;
+    margin: 0 auto;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.cupon-code-outer .heading h3 {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cupon-code {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #A9D5B2;
+    mask: radial-gradient(20px at 70% 50px, #0000 calc(100% - 1px), #000) 0 calc(-1*50px);
+    padding: 15px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.cupon-code .left {
+    display: block;
+    width: 70%;
+    position: relative;
+    padding-right: 15px;
+}
+
+.cupon-code .left::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background-color: #fff;
+    top: 0;
+    right: -6px;
+}
+
+.cupon-code .left h4 {
+    font-size: 21.9px;
+    font-weight: 600;
+    color: #002408;
+}
+
+.cupon-code .code {
+    position: relative;
+    display: block;
+    margin-top: 20px;
+}
+
+.cupon-code .left span {
+    font-size: 13.37px;
+    font-weight: 600;
+    padding: 0 16px;
+    background: #A9D5B2;
+    position: absolute;
+    top: -11px;
+    left: 37%;
+}
+
+.cupon-code .code-number {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    color: #002408;
+    border-radius: 15px;
+    border: 1px solid #002408;
+}
+
+.cupon-code .left .code .icon {
+    position: absolute;
+    top: -18px;
+    right: -4px;
+    color: #fff;
+    font-size: 20px;
+    background-color: #002408;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.cupon-code .rotate-text {
+    font-size: 21.34px;
+    font-weight: 600;
+    width: 30%;
+    display: block;
+}
+
+
+.cupon-code .rotate-text span {
+    transform: rotate(-90deg);
+    display: block;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* Get Cupon Code Popup End */
+
+/* Cashback offer Page */
+.cashbackoffer-outer,
+.cupon-offer-outer,
+.voucherpage-outer {
+    display: block;
+    padding: 40px 0;
+}
+
+.cashback-store .item,
+.cupon-offer-outer .item{
+    display: block;
+    width: 20%;
+    padding-bottom: 20px;
+}
+
+
+.cashback-store .item-inner {
+    margin: 0;
+}
+
+.voucherpage-outer .vaoucherpage-inner .item-inner {
+    background-color: #A9D5B2;
+}
+
+.voucherpage-outer .vaoucherpage-inner .item:nth-child(2n) .item-inner {
+    background-color: #002408;
+}
+
+/* Cashback offer Page End */
+
+/* ------------------------------------------------ Dashbord --------------------------------------------------------- */
+
+/* Dashbord Header Start */
+.dashbordheader {
+    background-color: #F3F3F3;
+}
+
+.dashbordheader>.ant-tabs-nav {
+    background-color: #A9D5B2;
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+
+.dashbordheader>.ant-tabs-nav .ant-tabs-nav-list>.ant-tabs-tab-active:active {
+    background: #000 !important;
+}
+
+.dashbordheader .ant-tabs .ant-tabs-tab + .ant-tabs-tab{
+    margin: 0 0 0 40px;
+}
+.dashbordheader .ant-tabs .ant-tabs-tab-btn .ant-tabs-tab-icon:not(:last-child){
+    margin-right: 6px;
+}
+.dashbordheader > .ant-tabs-nav .ant-tabs-tab .ant-tabs-tab-btn .ant-tabs-tab-icon img{
+    width: 25px;
+}
+.dashbordheader>.ant-tabs-nav .ant-tabs-tab-btn span:last-child {
+    display: none;
+}
+
+.dashbordheader>.ant-tabs-nav .ant-tabs-tab-active .ant-tabs-tab-btn span:last-child {
+    display: inline;
+    font-family: "Poppins", sans-serif !important;
+}
+
+
+.dashbordheader>.ant-tabs-nav .ant-tabs-tab .ant-tabs-tab-btn {
+    font-size: 16px;
+    color: #291F1D;
+    line-height: normal;
+}
+
+.dashbordheader>.ant-tabs-nav .ant-tabs-tab-active {
+    background-color: #002408;
+    border-radius: 0 20px 20px 20px;
+    padding: 10px !important;
+}
+
+.dashbordheader>.ant-tabs-nav .ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #fff !important;
+}
+
+/* Dashbord Header End */
+
+/* Dashbord Profile Start */
+.profile-outer {
+    display: block;
+    padding: 40px 0;
+}
+
+.profile-outer .profile-inner {
+    display: block;
+}
+
+.profile-outer .img-content {
+    display: block;
+    position: relative;
+}
+
+.profile-outer .edit-icon {
+    display: block;
+    text-align: right;
+    font-size: 25px;
+    font-weight: 700;
+    color: #002408;
+    position: relative;
+}
+
+.profile-outer .edit-icon input {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.profile-outer .profile-img {
+    display: block;
+    padding-right: 30px;
+}
+
+.profile-outer .profile-img img {
+    width: 100%;
+    height: 380px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.profile-outer .img-content h2 {
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    color: #002408;
+    font-family: "Poppins", sans-serif !important;
+
+}
+
+.profile-outer .text-content {
+    padding: 40px 20px;
+}
+
+
+
+.profile-outer .text-content label {
+    width: 100%;
+    display: block;
+    padding-bottom: 10px;
+    font-size: 17.39px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif !important;
+
+}
+
+.profile-outer .text-content .inputgroup {
+    margin-bottom: 15px;
+}
+
+.profile-outer .text-content input {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #D8D8D8;
+    border-radius: 12px;
+    color: #575757;
+    padding: 10px 10px;
+    outline: none;
+    font-family: "Poppins", sans-serif !important;
+    margin-bottom: 5px;
+}
+
+.profile-outer .text-content .birth-date {
+    display: flex;
+    align-items: center;
+}
+
+.profile-outer .react-datepicker-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.profile-outer .react-datepicker__input-container {
+    display: block;
+    position: absolute;
+    top: -12px;
+    width: 30px;
+    opacity: 0;
+}
+
+.profile-outer .react-datepicker-wrapper::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f073";
+    /* calendar icon */
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    cursor: pointer;
+    color: #575757;
+}
+
+.profile-outer .react-datepicker__input-container:hover::before {
+    background-color: #f0f0f0;
+}
+
+.profile-outer .react-datepicker-popper {
+    z-index: 1;
+}
+
+.profile-outer .react-datepicker {
+    border: none;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 8px;
+    width: 100%;
+}
+
+.profile-outer .react-datepicker__header {
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+}
+
+.profile-outer .react-datepicker__day-names {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.profile-outer .react-datepicker__day {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.profile-outer .react-datepicker__day:hover {
+    background-color: #f0f0f0;
+}
+
+.profile-outer .react-datepicker__day--selected {
+    background-color: #337ab7;
+    color: #fff;
+}
+
+.profile-outer .react-datepicker__navigation {
+    top: 14px;
+
+}
+
+.profile-outer .text-content .birth-date input:not(:last-child) {
+    width: 60px;
+    margin-right: 15px;
+}
+
+
+.profile-outer .text-content .gender {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.profile-outer .text-content .gender label {
+    width: auto;
+    padding-bottom: 0;
+    padding-right: 30px;
+}
+
+.profile-outer .text-content .gender span {
+    position: relative;
+    font-family: "Poppins", sans-serif !important;
+
+
+}
+
+.profile-outer .text-content input[type="number"] {
+    appearance: textfield;
+}
+
+.profile-outer .text-content input[type="radio"] {
+    box-sizing: border-box;
+    width: 14px;
+    height: 14px;
+    margin: 0;
+    margin-right: 10px;
+    padding: 0;
+    appearance: none;
+    border: 2px solid #038667;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.profile-outer .text-content input[type="radio"]:checked {
+    background-color: #038667;
+    border-color: #038667;
+}
+
+.profile-outer .text-content .gender span {
+    padding-right: 30px;
+}
+
+.profile-outer .text-content:last-child .submit-form {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.profile-outer .text-content:last-child .submit-form a {
+    display: inline;
+    padding: 10px 90px;
+    border-radius: 15px;
+    background-color: #11A966;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+/* Dashbord Profile End*/
+
+/* Dashbord My Cupon Start   */
+.mycupon-outer {
+    display: block;
+    padding: 40px 0;
+}
+
+.mycupon-outer .heading {
+    padding-bottom: 15px;
+}
+
+/* Notificition Outer Start */
+.notification-outer {
+    display: block;
+    width: 40%;
+    background-color: #fff;
+    border: 1px solid #CBCBCB;
+    box-shadow: 4px 5px 5.4px 0px #95959540;
+    margin: 0 150px 0 auto;
+    border-radius: 20px;
+}
+
+.notification-outer img {
+    width: 100%;
+}
+
+.notification-outer .notification-inner {
+    display: block;
+    padding: 20px;
+}
+
+.notification-outer p {
+    font-size: 14px;
+    font-weight: 700;
+    color: #11A966;
+    padding-bottom: 20px;
+}
+
+.notification-outer p span {
+    font-size: 12px;
+    font-weight: 700;
+    color: #11A966;
+    border: 1px solid #C7C3C3;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left: 6px;
+    display: inline-block;
+    text-align: center;
+}
+
+.notification-outer .item {
+    display: block;
+    padding-bottom: 15px;
+}
+
+.notification-outer .item-inner {
+    display: flex;
+    align-items: center;
+}
+
+.notification-outer .img-content {
+    display: block;
+    width: 10%;
+}
+
+.notification-outer .img-content img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.notification-outer .text-content {
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #5D5D5D;
+    width: 90%;
+}
+
+.notification-outer .text-content span {
+    color: #11A966;
+}
+
+/* Notificition Outer End */
+
+/* Won Loyaltiy Points Start */
+.loyaltipoints-outer {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 28.41px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.loyaltipoints-outer::after {
+    content: '';
+    background-image: url(../Image/congratesbgimg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 66%;
+    transform: rotate(400deg);
+}
+
+.loyaltipoints-outer::before {
+    content: '';
+    background-image: url(../Image/congratesbgimg.png);
+    background-size: contain;
+    width: 100%;
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 76%;
+    transform: rotate(335deg);
+}
+
+.loyaltipoints-outer .heading h3 {
+    font-size: 20.57px;
+    font-weight: 700;
+
+}
+
+.loyaltipoints-outer img {
+    width: auto;
+    height: 100%;
+}
+
+.loyaltipoints-outer .reward-img {
+    height: 90px;
+}
+
+.loyaltipoints-outer .loyaltiy-points {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.loyaltipoints-outer .loyaltiy-points .coins-img {
+    width: 40px;
+    height: 40px;
+}
+
+.loyaltipoints-outer .loyaltiy-points .coins {
+    font-size: 39.62px;
+    font-weight: 600;
+}
+
+.loyaltipoints-outer p {
+    font-size: 22.29px;
+    font-weight: 500;
+
+}
+
+.loyaltipoints-outer .buttons-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.loyaltipoints-outer .outline-button {
+    border-radius: 20px;
+    padding: 8px 30px;
+    border: 2.57px solid #002408;
+    color: #002408;
+    font-size: 17.14px;
+    font-weight: 500;
+}
+
+.loyaltipoints-outer .button {
+    background: #002408;
+    color: #fff;
+    font-size: 17.14px;
+    font-weight: 500;
+    padding: 8px 30px;
+    border-radius: 20px;
+    margin-left: 15px;
+}
+
+/* Won Loyaltiy Points End*/
+
+/* Wallet Dashbord Start */
+.wallet-outer {
+    display: block;
+    padding: 30px 0;
+}
+
+.wallet-outer .wallet-inner {
+    display: block;
+}
+
+.wallet-outer .balance-outer {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.wallet-outer .balance-outer .item {
+    padding: 0 10px;
+}
+
+.wallet-outer .balance-outer .your-balance {
+    width: 16%;
+}
+
+.wallet-outer .balance-outer .item .item-inner {
+    border-radius: 16px;
+    box-shadow: 0px 2.19px 7.77px 0px #736C6C40;
+    padding: 15px;
+}
+
+.wallet-outer .balance-outer .your-balance .item-inner {
+    background-color: #FFD392;
+}
+
+.wallet-outer .balance-outer .total-income .item-inner {
+    background-color: #AFECFF;
+}
+
+.wallet-outer .balance-outer .total-expenses .item-inner {
+    background-color: #E2FFBC;
+}
+
+.wallet-outer .balance-outer .item .item-inner .heading h4 {
+    font-size: 17.24px;
+    font-weight: 800;
+    color: #002408;
+    font-family: "Poppins", sans-serif !important;
+}
+
+.wallet-outer .balance-outer .item .item-inner .balnce-amount {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.wallet-outer .balance-outer .item .item-inner .income-amount,
+.wallet-outer .balance-outer .item .item-inner .expenses-amount {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 32.83px;
+    font-weight: 800;
+}
+
+.wallet-outer .balance-outer .item .use-now {
+    display: block;
+    text-align: right;
+}
+
+.wallet-outer .balance-outer .item .use-now a {
+    background-color: #000000;
+    color: #fff;
+    padding: 8PX 20PX;
+    border-radius: 20PX;
+    font-family: "Poppins", sans-serif !important;
+    font-size: 12.81px;
+    font-weight: 800;
+    line-height: 11.54px;
+    text-align: center;
+
+}
+
+.wallet-history {
+    padding: 30px 0;
+}
+
+.wallet-history .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.wallet-history .ant-tabs-nav {
+    background-color: transparent;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.wallet-history .ant-tabs-tab {
+    background-color: #fff;
+    border: 0.88px solid #9B9B9B;
+    box-shadow: 2px 2px 3.2px 0px #00000040;
+    border-radius: 20px;
+}
+
+.wallet-history .ant-tabs-nav .ant-tabs-tab .ant-tabs-tab-btn {
+    color: #000000;
+    padding: 0 70px;
+    font-family: "Poppins", sans-serif !important;
+    font-size: 14px;
+    font-weight: 800;
+
+}
+
+
+.wallet-history .ant-tabs-tab.ant-tabs-tab-active,
+.wallet-history .ant-tabs-tab:hover {
+    color: #fff;
+    background-color: #002408;
+    border: none;
+    box-shadow: none;
+}
+
+.wallet-history .ant-tabs-nav .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn,
+.wallet-history .ant-tabs-tab:hover .ant-tabs-tab-btn {
+    color: #fff;
+}
+
+/* Bank Account Start */
+.bank-outer {
+    display: block;
+    padding-top: 35px;
+}
+
+.bank-outer .bank-inner {
+    margin: 0 auto;
+    width: 800px;
+}
+
+.bank-outer .input-group {
+    padding: 15px;
+    display: block;
+}
+
+.bank-outer label {
+    width: 100%;
+    font-family: "Poppins", sans-serif !important;
+    font-size: 16px;
+    font-weight: 600;
+    color: #291F1D;
+    padding-bottom: 10px;
+}
+
+.bank-outer input {
+    width: 100%;
+    padding: 10px;
+    box-shadow: none;
+    border: 1px solid #D8D8D8;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 20px !important;
+}
+
+.bank-outer .or {
+    position: relative;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.bank-outer .or::after {
+    content: '';
+    background-color: #DCDCDC;
+    width: 100%;
+    height: 1px;
+    display: block;
+    position: absolute;
+    top: 10px;
+}
+
+.bank-outer .or span {
+    padding: 10px;
+    border: 1px solid #D8D8D8;
+    background: #fff;
+    border-radius: 20px;
+    z-index: 111;
+    position: relative;
+}
+
+.bank-outer .input-button {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.bank-outer .button {
+    display: inline;
+    padding: 10px 60px;
+    border-radius: 30px;
+}
+
+/* Bank Account End */
+
+/* Withdrawal Amount Start*/
+
+
+
+
+
+.withdrawal-outer {
+    display: block;
+    width: 30%;
+    background-color: #fff;
+    position: relative;
+    margin: 50px auto;
+    border-radius: 20px;
+}
+
+.withdrawal-outer .withdrawal-inner {
+    padding: 20px;
+}
+
+.withdrawal-outer .withdrawal-inner .heading h3 {
+    text-transform: capitalize;
+}
+
+.withdrawal-outer input[type='text'] {
+    border-radius: 20px;
+    border: 1px solid #E1E1E1;
+    background: #F2F2F2;
+    color: #858585;
+    padding: 10px;
+    width: 100%;
+}
+
+.withdrawal-outer .check-group {
+    display: flex;
+    padding: 10px 0;
+}
+
+.withdrawal-outer .check-group input {
+    margin-right: 10px;
+    font-family: "Poppins", sans-serif !important;
+
+}
+
+.withdrawal-outer .verify-account {
+    display: block;
+    padding-top: 10px;
+    color: #0F26F2;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.withdrawal-outer .warning {
+    display: block;
+    padding-top: 10px;
+    color: #F20F0F;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.withdrawal-outer .warning a {
+    color: #002408;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.check-group label {
+    font-size: 10px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif !important;
+}
+
+.withdrawal-outer .withdrawal-button {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.withdrawal-outer .withdrawal-button .button {
+    display: inline;
+    padding: 10px 50px;
+}
+
+/* Withdrawal Amount End*/
+
+/* Subscription Item Start */
+
+.expenses-outer {
+    display: block;
+    padding-top: 70px;
+}
+
+.subcription-item {
+    display: block;
+    padding-bottom: 30px;
+}
+
+.subcription-item .item-inner {
+    display: flex;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 15px;
+    align-items: center;
+    border: 0.83px solid #FFF6F6;
+    justify-content: space-between;
+    box-shadow: 0px 1.67px 5.92px 0px #736C6C40;
+
+}
+
+.subcription-item .img-content {
+    width: 20%;
+}
+
+.subcription-item .img-content img {
+    width: 100%;
+}
+
+.subcription-item .text-content {
+    width: 80%;
+    margin-left: 15px;
+}
+
+.subcription-item .text-content h3 {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.subcription-item .text-content .date-info {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+    justify-content: space-between;
+}
+
+.subcription-item .text-content .cupon-limit {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 4px 0;
+}
+
+
+.subcription-item .text-content .wallet {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subcription-item .text-content .usedwallet {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.subcription-item .text-content .wallet P {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif !important;
+}
+
+.subcription-item .text-content .wallet P span {
+    font-size: 24PX;
+}
+
+
+/* Subscription Item End */
+
+
+/* Subscription-History Start */
+
+.sub-history-outer {
+    display: block;
+    padding: 50px 0;
+}
+
+.sub-history-outer .sub-history-inner {
+    display: block;
+}
+
+.sub-history-outer .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+/* Subscription-History End */
+
+/* List View Button start*/
+
+.list-view button {
+    background-color: #A9D5B2;
+    border: 1px solid #A9D5B2;
+    color: #002408;
+    border-radius: 20px;
+    font-size: 15.93px;
+    font-weight: 700;
+
+
+}
+
+.list-view .btn:focus-visible,
+.list-view .btn.show,
+.list-view .btn:hover {
+    background-color: #A9D5B2;
+    border: 1px solid #A9D5B2;
+    color: #002408;
+}
+
+.list-view .dropdown-menu.show {
+    background-color: #A9D5B2;
+    border-radius: 20px;
+}
+
+.list-view .dropdown-menu.show a {
+    font-size: 15.93px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif !important;
+    text-align: center;
+    color: #002408;
+}
+
+.list-view .dropdown-menu.show a:first-child {
+    border-bottom: 1px solid #88C194;
+}
+
+.list-view .dropdown-item:focus,
+.list-view .dropdown-item:hover,
+.list-view .dropdown-item:active {
+    color: #002408;
+    background-color: transparent;
+}
+
+/* List View Button End */
+
+.income-outer {
+    display: block;
+    padding-top: 50px;
+    max-height: 400px;
+}
+
+.income-outer .item {
+    display: block;
+    background: #FFFFFF;
+    border: 1px solid #FFF6F6;
+    box-shadow: 0px 1.76px 6.26px 0px #736C6C40;
+    border-radius: 15px;
+}
+
+.income-outer .item .item-inner {
+    display: block;
+    padding: 15px;
+}
+
+.income-outer .compny-profile .item-inner .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.income-outer .compny-profile .item-inner .top img {
+    height: 15px;
+}
+
+.income-outer .compny-profile .item-inner .top .star-icon {
+    color: #FAA719;
+    margin-right: 8px;
+}
+
+.income-outer .compny-profile .item-inner .top .rating {
+    font-size: 14.1px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif !important;
+
+}
+
+.income-outer .compny-profile .item-inner .top p {
+    font-size: 11.45px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif !important;
+
+}
+
+.income-outer .compny-profile .item-inner .bottom {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.income-outer .compny-profile .item-inner .bottom img {
+    width: 100%;
+    height: auto;
+
+}
+
+.income-outer .compny-profile .item-inner .bottom .img-content {
+    width: 30%;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.income-outer .compny-profile .item-inner .bottom .text-content {
+    width: 70%;
+    margin-left: 10px;
+}
+
+.income-outer .compny-profile .item-inner .bottom .offer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.income-outer .compny-profile .item-inner .bottom .offer .button {
+    display: inline;
+    padding: 0px 15px;
+    border-radius: 30px;
+}
+
+.income-outer .compny-profile .item-inner .bottom h5 {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 2px;
+
+}
+
+.income-outer .compny-profile .item-inner .bottom .getoff {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.income-outer .compny-profile .item-inner .bottom .getoff span {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 16px;
+    font-weight: 600;
+    color: #F23812;
+}
+
+.income-outer .compny-profile .item-inner .bottom .offer {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 29.32px;
+    text-align: center;
+}
+
+.income-outer .user-profile .item-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.income-outer .user-profile .item-inner .img-content {
+    display: block;
+    width: 20%;
+
+
+}
+
+.income-outer .user-profile .item-inner .img-content img {
+    width: 60px;
+    height: 60PX;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.income-outer .user-profile .item-inner .text-content {
+    display: block;
+    width: 80%;
+    margin-left: 12PX;
+}
+
+.income-outer .user-profile .item-inner .user-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.income-outer .user-profile .item-inner .user-name h4 {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 4px;
+}
+
+.income-outer .user-profile .item-inner .user-name a.alert-icon {
+    color: #000;
+}
+
+.income-outer .user-profile .item-inner .id-date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 4px;
+}
+
+.income-outer .user-profile .item-inner .id-date .rafferal-id,
+.income-outer .user-profile .item-inner .id-date .date,
+.income-outer .user-profile .item-inner .plan-commision {
+
+    font-family: "Poppins", sans-serif !important;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+
+/* Wallet Dashbord End */
+
+
+/* LoyaltyPoints Start */
+.loyalty-points-outer {
+    display: block;
+    padding: 40px 0;
+}
+
+.loyalty-points-outer .loyalty-points-inner {
+    display: block;
+}
+
+.loyalty-points-outer .top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.loyalty-points-outer .top .current-coins {
+    display: flex;
+    width: 40%;
+    background: #002408;
+    padding: 15px;
+    border-radius: 12px;
+    color: #fff;
+}
+
+.loyalty-points-inner .top .text-content {
+    width: 70%;
+}
+
+.loyalty-points-inner .top .text-content h3 {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.loyalty-points-inner .top .text-content p {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.loyalty-points-inner .top .text-content .coins-ruppes {
+    display: flex;
+    align-items: center;
+}
+
+.loyalty-points-inner .top .text-content .coins-ruppes .coin-img {
+    width: 40px;
+    height: 40px;
+}
+
+.loyalty-points-inner .top .text-content .coins-ruppes .coin-img img {
+    width: 100%;
+}
+
+.loyalty-points-inner .top .text-content .coins-ruppes .coins-point {
+    font-size: 35px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif !important;
+}
+
+.loyalty-points-inner .top .img-content {
+    width: 30%;
+}
+
+.loyalty-points-outer .top .img-content img {
+    width: 100%;
+}
+
+.loyalty-points-outer .top .oreder-now {
+    display: block;
+}
+
+.loyalty-points-outer .top .oreder-now a {
+    background: #F6FCF7;
+    border-radius: 22px;
+    border: 1px solid #DADADA;
+    box-shadow: 0px 1.5px 3px 0px #00000040;
+    color: #000000;
+    padding: 10PX 30PX;
+    font-family: "Poppins", sans-serif !important;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.loyalty-points-outer .top .oreder-now a .icon {
+    font-size: 18px;
+}
+
+.loyalty-points-outer .bottom {
+    display: block;
+    padding-top: 20px;
+}
+
+.loyalty-points-outer .bestdeal-outer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 -15px;
+}
+
+.loyalty-points-outer .bestdeal-outer .item {
+    display: block;
+    width: 20%;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+.bestdeal-outer .item .item-inner {
+    padding: 15px;
+    border: 1px solid #DFDFDF;
+    background-color: #fff;
+    box-shadow: 0px 0px 2px 0px #5C5C5C40;
+    border-radius: 20px;
+}
+
+.bestdeal-outer .img-content {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+.bestdeal-outer .img-content img {
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.bestdeal-outer .text-content {
+    text-align: center;
+    display: block;
+}
+
+.bestdeal-outer .text-content h4,
+.loyalty-point-modal .text-content p {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif !important;
+
+}
+
+.bestdeal-outer .text-content a {
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px solid #002408;
+    display: block;
+    padding: 10px 0;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #000000;
+    font-family: "Poppins", sans-serif !important;
+    margin-top: 15px;
+}
+
+.bestdeal-outer .text-content a img {
+    width: 20px;
+    height: 20px;
+
+}
+
+.modal-backdrop.show {
+    opacity: 0.05;
+}
+
+.loyalty-point-modal {
+    width: 30%;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.loyalty-point-modal .loyalty-point-modal-inner {
+    display: block;
+    padding: 20px;
+}
+
+.loyalty-point-modal .loyalty-point-modal-inner .img-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.loyalty-point-modal .img-content {
+    width: 20%;
+}
+
+.loyalty-point-modal .img-content img {
+    width: 100%;
+}
+
+.loyalty-point-modal .text-content {
+    width: 70%;
+}
+
+.loyalty-point-modal .description {
+    display: block;
+    margin: 10px 0;
+}
+
+.loyalty-point-modal .description h5 {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 21.12px;
+    font-weight: 600;
+}
+
+.loyalty-point-modal .description p {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 13.2px;
+    font-weight: 600;
+}
+
+.loyalty-point-modal .modal-button {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.loyalty-point-modal .button {
+    display: inline;
+    padding: 10px 50px;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+
+.loyalty-point-modal .button img {
+    width: 25px;
+    height: 25px;
+}
+
+
+
+
+/* LoyaltyPoints End */
+
+/* Order List Start */
+.order-list-outer {
+    display: block;
+    padding-top: 30px;
+}
+
+.order-list-outer .heading h3 {
+    font-size: 24px;
+    font-weight: 600;
+
+}
+
+.order-list-outer .order-list-items {
+    padding: 20px 0;
+}
+
+.order-list-outer .order-list-items .item,
+.trackmodal-outer .item {
+    display: block;
+    padding-bottom: 20px;
+}
+
+.order-list-outer .order-list-items .item-inner,
+.trackmodal-outer .item-inner {
+    background-color: #fff;
+    border: 1px solid #D0D0D0;
+    box-shadow: 0px 0px 2.41px 0px #79797940;
+    border-radius: 13.36px;
+}
+
+.order-list-outer .order-list-items .order-id-track,
+.trackmodal-outer .order-id-track {
+    display: flex;
+    border-bottom: 1PX solid #ECE7E7;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order-list-outer .order-list-items .order-id-track .order-id,
+.trackmodal-outer .order-id-track .order-id {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.order-list-outer .order-list-items .order-id-track a {
+    border: 1px solid #AEAEAE;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 8px;
+    padding: 3px 12px;
+    color: #292929;
+    background: #FBFBFB;
+    font-family: "Poppins", sans-serif !important;
+}
+
+.order-list-outer .order-list-items .item .content,
+.trackmodal-outer .item .content {
+    display: flex;
+    align-items: center;
+    padding: 12px 18px;
+}
+
+.order-list-outer .order-list-items .item .img-content,
+.trackmodal-outer .item .img-content {
+    width: 40%;
+    height: 80px;
+    text-align: center;
+}
+
+.order-list-outer .order-list-items .img-content img,
+.trackmodal-outer .img-content img {
+    width: auto;
+    height: 100%;
+}
+
+.order-list-outer .order-list-items .item .text-content,
+.trackmodal-outer .item .text-content {
+    width: 60%;
+    padding-left: 15px;
+}
+
+.order-list-outer .order-list-items .item .content .text-content h2,
+.trackmodal-outer .item .content .text-content h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.order-list-outer .order-list-items .item .content .text-content p,
+.trackmodal-outer .item .content .text-content p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.order-list-outer .order-list-items .item .content .text-content p img,
+.trackmodal-outer .item .content .text-content p img {
+    width: 18px;
+    height: 18px;
+}
+
+
+
+/* Order List End */
+
+/* Addressing Start */
+
+.addressing-outer {
+    display: block;
+    padding: 30px 0;
+}
+
+.addressing-outer .addressing-inner {
+    display: block;
+
+}
+
+.addressing-outer .heading h3 {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.addressing-outer .input-group {
+    display: block;
+}
+
+.addressing-outer .input-group label {
+    width: 100%;
+    display: block;
+    font-family: "Poppins", sans-serif !important;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 10px;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+}
+
+.addressing-outer .input-group input,
+.addressing-outer .input-group textarea {
+    width: 100%;
+    display: block;
+    border-radius: 24px !important;
+    border: 1px solid #D8D8D8;
+    background-color: #fff;
+    padding: 10px;
+    font-family: "Poppins", sans-serif !important;
+    margin-bottom: 15px;
+    font-size: 15.12px;
+    font-weight: 500;
+    resize: none;
+    outline: none;
+}
+
+
+.addressing-outer .check-group {
+    display: flex;
+    font-family: "Poppins", sans-serif !important;
+    font-size: 13.63px;
+    font-weight: 500;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.addressing-outer .check-group input {
+    width: 20PX;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.addressing-outer .check-group label {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.addressing-outer .input-button {
+    display: block;
+    text-align: center;
+}
+
+.addressing-outer .input-button .button {
+    display: inline;
+    padding: 10px 70px;
+    border-radius: 35px;
+    border: 0.85px solid #74B080;
+}
+
+/* Addressing End */
+
+/* Trackmodal Start */
+.trackmodal-outer {
+    display: block;
+    width: 30%;
+    background-color: #fff;
+    border-radius: 12px;
+    margin: 0 auto;
+}
+
+.trackmodal-outer .trackmodal-inner {
+    display: block;
+    padding: 15px;
+}
+
+.trackmodal-outer .trackmodal-inner .item a {
+    padding: 0 10px;
+    color: #000;
+}
+
+.trackmodal-outer .product-tracker {
+    display: block;
+}
+
+.trackmodal-outer .product-tracker ul {
+    position: relative;
+    display: block;
+}
+
+.trackmodal-outer .product-tracker li {
+    position: relative;
+    display: flex;
+
+}
+
+.trackmodal-outer .product-tracker li:not(:last-child)::before {
+    content: '';
+    width: 2px;
+    height: 100px;
+    display: block;
+    background-color: #002408;
+    position: relative;
+    top: 10px;
+    left: 6px;
+}
+
+.trackmodal-outer .product-tracker li span {
+    margin-left: 30px;
+    font-family: "Poppins", sans-serif !important;
+    font-size: 14px;
+}
+
+.trackmodal-outer .product-tracker li::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: #002408;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 0;
+}
+
+
+/* Trackmodal End */
+
+/* Referral Id Start */
+
+.referral-outer {
+    display: block;
+    padding: 30px 0;
+}
+
+.referral-outer .referral-inner {
+    display: block;
+}
+
+.referral-outer .income-outer {
+    display: block;
+    padding: 20px 0;
+}
+
+.referral-outer .ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn,
+.referral-outer .ant-tabs .ant-tabs-tab:hover .ant-tabs-tab-btn {
+    background-color: #002408;
+    color: #fff;
+    border: 1px solid #002408;
+
+}
+
+.referral-outer .ant-tabs .ant-tabs-tab .ant-tabs-tab-btn {
+    background-color: #E7FDEB;
+    color: #002408;
+    border: 1px solid #8EE9A0;
+    padding: 10px 40px;
+    border-radius: 50px;
+    font-family: "Poppins", sans-serif !important;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+
+.referral-outer .income-outer .item {
+    margin-bottom: 15px;
+}
+
+/* CONNECT Start */
+.connect-outer {
+    display: block;
+    padding: 20px 0;
+}
+
+.connect-outer .connect-inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.connect-outer .connect-inner .item {
+    display: block;
+    width: 20%;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+.connect-outer .connect-inner .item-inner {
+    display: block;
+    background-color: #fff;
+    border: 1px solid #E9E9E9;
+    border-radius: 12px 12px 0 0;
+    padding: 15px;
+
+}
+
+.connect-outer .item-inner .img-content {
+    display: block;
+    text-align: center;
+}
+
+.connect-outer .item-inner .img-content img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.connect-outer .item-inner .user-name {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.connect-outer .item-inner .referral-id {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+/* Referral Id End */
+
+/* User Terms Start */
+
+.user-terms-outer {
+    padding: 30px 0;
+}
+
+/* User Terms End */
+
+/* ChangePAssword Satrt */
+
+.blank {
+    height: 500px;
+    display: block;
+    position: relative;
+}
+
+.change-password-outer {
+    display: block;
+    padding: 40px 0;
+}
+
+.change-password-outer .change-password-inner {
+    display: block;
+}
+
+.change-password-outer .change-password {
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+.change-password-outer .change-password .left {
+    background: #fff;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+}
+
+.change-password-outer .change-password .img-content {
+    display: flex;
+    align-items: center;
+}
+
+.change-password-outer .change-password .img-content img {
+    width: 100%;
+}
+
+
+.change-password-outer .right {
+    background: #18A567;
+    border-radius: 0 10px 10px 0;
+    padding: 20px 15px;
+}
+
+.change-password-outer .right .inner {
+    padding: 20PX 0;
+}
+
+.change-password-outer .heading h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+
+.change-password .input-group {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.change-password .input-group label {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.change-password .input-group input {
+    display: block;
+    width: 100%;
+    border: 1px solid #8C8A8A;
+    background-color: #FDFFFF;
+    color: #757576;
+    border-radius: 11px !important;
+    padding: 10px;
+    font-family: "Poppins", sans-serif !important;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.change-password .button {
+    background-color: #fff;
+    color: #002408;
+    border-radius: 12px;
+    margin-top: 30px;
+}
+
+/* ChangePAssword End */
+
+/* Abot US PAge Start */
+.about-outer {
+    background-color: #F3F3F3;
+    padding-bottom: 40px;
+    position: '';
+}
+
+
+.become-outer {
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fff;
+    padding-top: 15px;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.become-outer::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    background-image: url(../Image/wave.png);
+    left: 0;
+    right: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 119px;
+}
+
+.become-outer .become-inner .row {
+    align-items: center;
+}
+
+.become-outer .text-content .heading h3 {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.become-outer .text-content p {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 15PX;
+    margin-bottom: 30px;
+
+}
+
+.become-outer .text-content a {
+    border-radius: 13.6px;
+    background-color: #291F1D;
+    color: #fff;
+    font-family: "Poppins", sans-serif !important;
+    font-size: 19px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10PX 30PX;
+    margin-top: 20px;
+}
+
+.become-outer .img-content {
+    display: block;
+    margin-top: 65px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+
+.become-outer .img-content img {
+    width: 70%;
+    position: relative;
+    border-radius: 36px;
+    transform: rotate(-20deg);
+
+}
+
+
+.about-outer .subscribe-outer {
+    margin-bottom: 0;
+}
+
+.agency-outer {
+    display: block;
+    padding-top: 40px;
+}
+
+.agency-outer .agency-inner {
+    display: block;
+    text-align: center;
+}
+
+.agency-outer h3 {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 28px;
+    font-weight: 600;
+
+}
+
+.agency-outer p {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.partner-outer {
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.partner-outer .partner-inner {
+    display: block;
+    text-align: center;
+}
+
+.partner-outer .heading h3 {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 28px;
+    font-weight: 600;
+
+}
+
+.partner-outer .our-partner .item {
+    padding: 10px;
+
+}
+
+.partner-outer .our-partner .item .item-inner {
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+
+.partner-outer .our-partner .item .item-inner .img-content {
+    display: flex;
+    width: 119px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.about-outer .subscribe-inner,
+.about-with-us .subscribe-inner {
+    background-color: #fff;
+}
+
+
+.client-outer {
+    display: block;
+    padding: 20px 0;
+}
+
+/* Abot US PAge End */
+
+/* Faq Start */
+.faq-outer {
+    display: block;
+    padding: 40px 0;
+}
+
+.faq-outer .faq-inner {
+    display: block;
+}
+
+.faq-outer .img-content {
+    display: block;
+    text-align: center;
+}
+
+
+.faq-outer .heading h3 {
+    text-align: center;
+}
+
+.faq-outer .search-box {
+    border: 1px solid #038667;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    justify-content: space-between;
+}
+
+.faq-outer .input-box {
+    display: flex;
+    align-items: center;
+}
+
+.faq-outer .input-box .icon {
+    padding: 10px;
+}
+
+.faq-outer .search-box input {
+    display: block;
+    border: none;
+    padding: 10px;
+}
+
+.faq-outer .search-box .button {
+    color: #fff;
+    background-color: #11A966;
+    padding: 10px 40px;
+}
+
+.faq-outer .faq {
+    display: block;
+    padding-top: 30px;
+}
+
+.faq-outer .faq .accordion-item {
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid #038667;
+    box-shadow: 0px 5.59px 4.87px 0px #FAF3EE;
+    border-radius: 10px !important;
+}
+
+
+
+.faq-outer .faq .accordion-item .accordion-header button::after {
+    content: '\2b';
+    background-image: none;
+}
+
+.faq-outer .faq .accordion-item .accordion-header button {
+    background: transparent;
+    font-family: Poppins;
+    font-size: 15.84px;
+    font-weight: 600;
+    line-height: 24.75px;
+    letter-spacing: -0.5315680503845215px;
+    text-align: left;
+    color: #000;
+}
+
+.faq-outer .faq .accordion-item .accordion-button:not(.collapsed)::after {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f068';
+    transform: none;
+}
+
+.faq-outer .faq .accordion-item .accordion-header .accordion-button:focus {
+    z-index: 3;
+    border: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+.faq-outer .faq .accordion-item .accordion-collapse {
+    border-top: 1px solid #E2D3CF;
+}
+
+
+
+/* Faq End */
+
+/* Partner With us */
+.about-with-us .about {
+    display: block;
+    padding: 40px 0;
+}
+
+/* Partner With us End*/
+
+/* WishList Strat */
+.wishlist-outer .ant-tabs-content-holder {
+    display: block;
+    padding: 30px 0;
+}
+
+.wishlist-outer .voucher-outer .container{
+    padding: 0 15px !important;
+}
+
+/* WishList End */
+
+
+
+/* What Next Modal Start*/
+.what-next-outer {
+    position: absolute;
+    width: 400PX;
+}
+
+.what-next-outer::after {
+    content: '';
+    position: absolute;
+    background: #F0F0F0;
+    filter: blur(40px);
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    height: 300px;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.what-next-inner {
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    z-index: 111;
+    background-color: #fff;
+    border-radius: 15px;
+    border: 1px solid #E2E2E2;
+    box-shadow: -1.26px -1.57px 1.6px 0px #9F8F8F40;
+}
+
+.what-next-inner .heading {
+    display: block;
+    text-align: center;
+}
+
+.what-next-outer .steps {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.what-next-outer span {
+    display: block;
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: 600;
+    padding-top: 12px;
+    position: relative;
+    background-color: #fff;
+}
+
+.what-next-outer span::before {
+    display: block;
+    content: '';
+    width: 16px;
+    height: 2.5px;
+    position: absolute;
+    left: -18px;
+    top: 19px;
+    background-color: #A09D9D;
+}
+
+.what-next-outer span::after {
+    display: block;
+    content: '\f061';
+    font-family: 'Font Awesome 6 Free';
+    position: absolute;
+    right: -16px;
+    top: 10px;
+    font-size: 14px;
+    color: #A09D9D;
+}
+
+.what-next-inner img {
+    width: 40px;
+}
+
+.what-next-outer .first,
+.what-next-outer .second,
+.what-next-outer .third {
+    width: 20%;
+}
+
+.what-next-outer p {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* What Next Modal End*/
+
+
+
+/* --------------------------- Merchant Css Start ------------------------ */
+
+/* Home Page Css Start */
+
+.partnerwith-merchant-outer,
+.todayssell-outer {
+    display: block;
+    background: #F0F9FE;
+    box-shadow: 0px 4px 4px 0px #E9E9E9;
+    padding: 30px 0;
+    padding-bottom: 80px;
+    position: relative;
+}
+
+.partnerwith-merchant-outer::after {
+    position: absolute;
+    bottom: -20px;
+    content: '';
+    background-image: url(../Image/wave.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 120px;
+    left: 0;
+    right: 0;
+}
+
+.todayssell-outer {
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.sell-outer::after {
+    position: absolute;
+    bottom: -90px;
+    content: '';
+    background-image: url(../Image/reverse-wave.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 120px;
+    left: 0;
+    right: 0;
+    z-index: 111;
+}
+
+.partnerwith-merchant-outer .text-content,
+.todayssell-outer .text-content {
+    display: block;
+}
+
+.partnerwith-merchant-outer .text-content h3,
+.todayssell-outer .text-content h3 {
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+.partnerwith-merchant-outer .text-content p,
+.todayssell-outer .text-content p {
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 15px 0;
+    margin-bottom: 20px;
+}
+
+.partnerwith-merchant-outer .text-content a,
+.todayssell-outer .text-content a {
+    background-color: #002408;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.partnerwith-merchant-outer img,
+.todayssell-outer img {
+    width: 100%;
+}
+
+.sell-outer {
+    display: block;
+    background-color: #F3F3F3;
+    padding: 40px 0;
+    position: relative;
+}
+
+.sell-outer .sell-inner {
+    display: block;
+    background-color: #fff;
+    border: 1px solid #CECECE;
+    border-radius: 20px;
+    padding: 20px;
+    width: 992px;
+    margin: 0 auto;
+}
+
+.sell-outer .heading h3 {
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.sell-outer .item {
+    display: block;
+    padding: 15px;
+}
+
+.sell-outer .item-inner {
+    display: flex;
+    align-items: center;
+
+}
+
+.sell-outer .img-content {
+    display: block;
+    margin-right: 20px;
+}
+
+.sell-outer .img-content img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.sell-outer .text-content h2 {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 39px;
+    text-align: left;
+
+}
+
+.sell-outer .text-content p {
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 400;
+    display: block;
+
+}
+
+
+/* Home Page Css End */
+
+/* Header Start */
+.merchantheader {
+    display: block;
+}
+
+.merchantheader .top .header-inner {
+    justify-content: center;
+}
+
+
+.merchantheader .search {
+    width: 500px;
+}
+
+.merchantheader .userhouse a {
+    display: block;
+    font-size: 22px;
+    height: 28px;
+    color: #291F1D;
+    text-align: center;
+    margin-right: 10px;
+}
+
+/* Header End */
+
+/* Apply Of Merchant Start */
+
+.apply-merchant {
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    margin-bottom: 40px;
+}
+
+.apply-merchant .heading h3 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    color: #291F1D;
+
+}
+
+.apply-merchant .input-group {
+    margin-bottom: 30px;
+}
+
+.apply-merchant label {
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding-bottom: 12px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #291F1D;
+}
+
+.apply-merchant input {
+    display: block;
+    width: 100%;
+    border: 1px solid #D7D7D7;
+    border-radius: 22px !important;
+    padding: 10px 15px;
+    font-family: Poppins;
+    color: #737373;
+    font-size: 13.98px;
+    font-weight: 500;
+}
+
+.apply-merchant input::placeholder {
+    text-transform: capitalize;
+}
+
+.apply-merchant input[type='number'] {
+    appearance: textfield;
+}
+
+.apply-merchant .signup-button {
+    margin-top: 20px;
+}
+
+.apply-merchant .signup-button a {
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #11A966;
+    padding: 10px 60px;
+    border-radius: 18px;
+}
+
+
+/* Apply Of Merchant End */
+
+/* Approval Start */
+.approval-outer {
+    display: block;
+    width: 25%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 42px;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.approval-outer .heading h3 {
+    font-family: Poppins;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.approval-outer p {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+.approval-outer a {
+    border-radius: 20px;
+    display: inline;
+    padding: 10px 80px;
+    color: #002408;
+}
+
+/* Approval End */
+
+/* merchant-cupon Strat*/
+.merchant-cupon {
+    display: block;
+    padding: 40px 0;
+}
+
+.merchant-cupon .container {
+    overflow: hidden;
+}
+
+.merchant-cupon .owl-carousel .owl-stage-outer {
+    overflow: visible;
+}
+
+.merchant-cupon .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+
+.merchant-cupon .heading h3 {
+    text-transform: capitalize;
+}
+
+.merchant-cupon .heading a {
+    color: #fff;
+    padding: 10px 20px;
+    font-family: Poppins;
+    font-size: 14.77px;
+    font-weight: 600;
+    text-align: center;
+    background: #11A966;
+    border-radius: 12px;
+}
+
+.cupon-row {
+    display: block;
+}
+
+.cupon-row img {
+    width: auto !important;
+    height: 40px;
+}
+
+.cupon-row .item {
+    display: block;
+    padding-bottom: 20px;
+}
+
+.cupon-row .item-inner {
+    display: block;
+    position: relative;
+    border: 1px solid #CFCFCF;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 2.83px 0px #F7EFE4;
+}
+
+.cupon-row .item-inner .cupon-status {
+    position: absolute;
+    background-image: linear-gradient(180deg, #F3F3F3 49%, #FFFFFF 56.5%);
+    border-radius: 12px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+    top: -12px;
+    right: 30px;
+    padding: 0 6px;
+}
+
+.cupon-row .item-inner .cupon-status .pending {
+    color: #F23812;
+}
+
+.cupon-row .item-inner .cupon-status .decline {
+    color: #870D56;
+}
+
+.cupon-row .item-inner .cupon-status .approval {
+    color: #038667;
+}
+
+.cupon-row .item-inner .top {
+    display: flex;
+}
+
+.cupon-row .item-inner .img-content {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.cupon-row .item-inner .img-content h2 {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 10px;
+    color: #291F1D;
+}
+
+.cupon-row .item-inner .cupon-mode {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    color: #291F1D;
+}
+
+.cupon-row .item .bottom {
+    margin-top: 15px;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.cupon-row .item .bottom>div {
+    margin-bottom: 4px;
+}
+
+.cupon-row .item .bottom a {
+    color: #fff;
+    background-color: #11A966;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+    border-radius: 12px;
+    padding: 6px;
+}
+
+/* merchant-cupon End*/
+
+
+/* Draft Cupon Start */
+
+.draft-cupon-outer {
+    display: block;
+    padding: 30px 0;
+    border: 1px solid #DEDEDE;
+}
+
+.draft-cupon-outer .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.draft-cupon-outer .heading h3 {
+    text-transform: capitalize;
+}
+
+.draft-cupon-outer .heading a {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+
+}
+
+
+
+.draft-cupon-outer .owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 20px;
+}
+
+.draft-cupon-outer .owl-theme .owl-dots .owl-dot span {
+    width: 12px;
+    height: 12px;
+}
+
+.draft-cupon-outer .cupon-row .item-inner .top {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.draft-cupon-outer .cupon-row .item-inner .add-new a {
+    color: #fff;
+    padding: 8px 10px;
+    font-size: 11px;
+    font-weight: 600;
+    text-align: center;
+    background: #11A966;
+    border-radius: 12px;
+}
+
+.draft-cupon-outer .cupon-row .item .bottom a {
+    color: #002408;
+    background-color: #A9D5B2;
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline;
+    text-align: center;
+    border-radius: 8px;
+    padding: 3px 20px;
+}
+
+.draft-cupon-outer .cupon-row .item .bottom div:last-child {
+    display: block;
+    text-align: right;
+}
+
+/* Draft Cupon End */
+
+/* Subscription Start */
+.subscription-outer {
+    display: block;
+    padding: 30px 0;
+}
+
+.subscription-outer .heading h3 {
+    text-transform: capitalize;
+}
+
+.subscription-outer .item {
+    display: block;
+    padding-bottom: 20px;
+}
+
+.subscription-outer .item .item-inner {
+    border: 1px solid #FFF6F6;
+    box-shadow: 0px 1.84px 6.53px 0px #736C6C40;
+    border-radius: 13px;
+    padding: 15px;
+}
+
+.subscription-outer .item .item-inner .sub-plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subscription-outer .item .item-inner .sub-plan span {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    color: #08755B;
+}
+
+.subscription-outer .item .item-inner .sub-plan a {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    color: #291F1D;
+}
+
+.subscription-outer .item .item-inner .img-content {
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+}
+
+.subscription-outer .item .item-inner .img-content img {
+    width: 40px;
+}
+
+.subscription-outer .item .item-inner .img-content h4 {
+    font-family: Poppins;
+    font-size: 22.94px;
+    font-weight: 600;
+    line-height: 19.37px;
+    letter-spacing: -0.3360680937767029px;
+    text-align: center;
+    color: #002408;
+    padding: 0 10px;
+}
+
+.subscription-outer .item .item-inner .img-content span {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.subscription-outer .item .item-inner .info div {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 3px 0;
+}
+
+.subscription-outer .item .item-inner .info div b {
+    font-weight: 600;
+}
+
+
+/* Subscription End */
+
+/* Create Operator Login */
+.create-operator-login {
+    display: block;
+    margin-bottom: 40px;
+}
+
+.create-operator-login .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.create-operator-login .heading h3 {
+    text-transform: capitalize;
+}
+
+.create-operator-login .heading span {
+    font-size: 25px;
+}
+
+
+.create-operator-login .heading a {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 37.86px;
+    text-align: center;
+    color: #291F1D;
+}
+
+.create-operator-login .item {
+    margin-bottom: 20px;
+}
+
+.create-operator-login .item .item-inner {
+    border: 1.33px solid #CBCBCB;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.create-operator-login .item .img-content {
+    display: flex;
+}
+
+.create-operator-login .item img {
+    width: 40px !important;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.create-operator-login .item .user-post {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 10px;
+    line-height: 40px;
+}
+
+.create-operator-login .item .edit {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.create-operator-login .text-content {
+    display: block;
+    padding-top: 10px;
+}
+
+.create-operator-login .text-content .name,
+.create-operator-login .text-content .email {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 4px;
+}
+
+.create-operator-login .button-groups {
+    display: flex;
+    padding-top: 12px;
+}
+
+.create-operator-login .button-groups .delete {
+    border: 1px solid #FF8A8A;
+    color: #FF0000;
+    border-radius: 7px;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    margin-right: 10px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.create-operator-login .button-groups .button {
+    background-color: #002408;
+    color: #fff;
+    width: 50%;
+}
+
+.operator-manager-outer {
+    padding: 40px 0;
+}
+
+/* Create Operator Login End */
+
+
+/* Static Start */
+
+
+.statics-outer {
+    display: block;
+    padding-bottom: 40px;
+}
+
+.statics-outer .heading h3 {
+    text-transform: capitalize;
+}
+
+.statics-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* CircularProgress Start */
+
+.statics-outer .circularprogress-outer {
+    display: block;
+    padding: 0 10px;
+}
+
+.static-progress-bar {
+    display: block;
+}
+
+.static-progress-bar .progress-outer {
+    margin-bottom: 10px;
+
+}
+
+.static-progress-bar .progress-outer .progress-inner {
+    display: block;
+    padding: 10px;
+    border: 1px solid #D0D0D0;
+    border-radius: 12px;
+    text-align: center;
+    height: 160px;
+    width: 170px;
+    margin: 10px;
+}
+
+.static-progress-bar .progress-outer .progress-inner .CircularProgressbar .CircularProgressbar-text {
+    fill: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.static-progress-bar .progress-outer .progress-inner .CircularProgressbar .CircularProgressbar-trail {
+    stroke: #EFEDED;
+    stroke-linecap: round;
+
+}
+
+.static-progress-bar .progress-outer .CircularProgressbar {
+    width: 80px;
+}
+
+.static-progress-bar .progress-outer .text-content p {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+/* CircularProgress End */
+
+/* Chart Progress start */
+.chart-progress {
+    display: block;
+    padding: 0 10px;
+}
+
+.chart-progress-outer {
+    display: block;
+    border: 3.12px solid #EDEDED;
+    background: #FFF6EF;
+    border-radius: 14.82px;
+    padding: 15px;
+}
+
+.chart-progress-outer .chart-progress-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chart-progress-outer .chart-progress-inner .left {
+    width: 40%;
+}
+
+
+.chart-progress-outer .data-info {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.chart-progress-outer .persentage-text {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.chart-progress-outer .persentage-text span {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.chart-progress-outer .offer-text {
+    font-family: Poppins;
+    font-size: 15.52px;
+    font-weight: 600;
+    text-align: center;
+    width: 80%;
+    margin-left: 5px;
+}
+
+
+/* Chart Progress End */
+
+/* Static End */
+
+/* StaticPage Start */
+.staticpage-outer {
+    display: block;
+    padding: 50px 0;
+}
+
+.staticpage-outer .static-progress-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* StaticPage End */
+
+
+
+/* Draft Cupon Start */
+.draft-cupon-page {
+    display: block;
+    padding: 70px 0;
+}
+
+.draft-cupon-page .cupon-mode {
+    font-family: Poppins;
+    position: absolute;
+    top: -8px;
+    right: -50px;
+    font-size: 13px !important;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+.draft-cupon-page .cupon-row .item .bottom div {
+    margin-bottom: 10px;
+}
+
+/* Draft Cupon End */
+
+
+/* Add New Deals Start */
+
+.add-new-deals-outer {
+    display: block;
+    padding: 60px 0;
+}
+
+.add-new-deals-outer .add-new-deals-inner {
+    display: block;
+    border-radius: 32px;
+    border: 1px solid #6D4C3D;
+    padding: 40px 30px;
+}
+
+.add-new-deals-outer .heading {
+    text-align: center;
+    padding: 20px;
+}
+
+.add-new-deals-outer .inputgroup {
+    display: block;
+    padding-bottom: 20px;
+}
+
+.add-new-deals-outer .inputgroup label,
+.add-new-deals-outer .checkgroup label {
+    font-family: Poppins;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #291F1D;
+    margin-bottom: 6px;
+}
+
+.add-new-deals-outer .inputgroup input,
+.add-new-deals-outer .inputgroup select,
+.add-new-deals-outer .inputgroup textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #D6D6D6;
+    border-radius: 22px;
+    color: #737373;
+    background-color: #fff;
+    outline: none;
+}
+
+.add-new-deals-outer .inputgroup select {
+    appearance: none;
+    position: relative;
+    background-image: url(../Image/Downarrow.png);
+    background-repeat: no-repeat;
+    background-position: 95%;
+    background-size: 12px;
+}
+
+.add-new-deals-outer .inputgroup textarea {
+    resize: none;
+    height: 100px;
+}
+
+.add-new-deals-outer .inputgroup select::after {
+    content: '\f107';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 10px;
+}
+
+.add-new-deals-outer .inputgroup ::placeholder {
+    text-transform: capitalize;
+    color: #737373;
+}
+
+/* Custom Upload Image */
+
+.add-new-deals-outer .upload-image {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #D6D6D6;
+    border-radius: 22px;
+    color: #737373;
+    background-color: #fff;
+    outline: none;
+    justify-content: center;
+}
+
+.add-new-deals-outer .upload-image input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.add-new-deals-outer .upload-image img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+
+/* Custom Check box */
+
+.add-new-deals-outer .checkgroup {
+    display: flex;
+    align-items: center;
+}
+
+.add-new-deals-outer .checkgroup input {
+    position: relative;
+    height: 25px;
+    width: 25px;
+    padding: 8px !important;
+    appearance: none;
+    cursor: pointer;
+    border: 1px solid #494949;
+    border-radius: 3px;
+    margin: 0;
+    margin-right: 8px;
+    background: #EDEDED;
+}
+
+.add-new-deals-outer .checkgroup label {
+    margin: 0;
+}
+
+.add-new-deals-outer .checkgroup input:checked {
+    background-color: #494949;
+    border: 1px solid #494949;
+}
+
+.add-new-deals-outer .checkgroup input:checked::before {
+    content: "\f00c";
+    position: absolute;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 700;
+    top: 3px;
+    color: #fff;
+    left: 5px;
+    font-size: 16px;
+}
+
+/* Button */
+
+.add-new-deals-outer .submit-button {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.add-new-deals-outer .submit-button button {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 14.32px;
+    text-align: center;
+    color: #fff;
+    border-radius: 16px;
+    padding: 15px 80px;
+    box-shadow: none;
+    border: none;
+    background-color: #11A966;
+}
+
+/* Add New Deals End */
+
+/* Cupon Code add Popup Start */
+
+.cuponadd-outer {
+    display: block;
+    width: 20%;
+    padding: 15px;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 22px;
+}
+
+.cuponadd-outer .heading h3 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 22px;
+}
+
+.cuponadd-outer p {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.cuponadd-outer .button-group {
+    display: flex;
+    align-items: center;
+}
+
+.cuponadd-outer .button-group a {
+    display: block;
+    width: 50%;
+}
+
+.cuponadd-outer .button-group .button {
+    margin-right: 5px;
+    border-radius: 22px;
+    font-size: 16px;
+    padding: 8px 0;
+}
+
+.cuponadd-outer .button-group .outline-button {
+    margin-left: 5px;
+    border-radius: 22px;
+    border: 1px solid #4A4E4B;
+    color: #545554;
+    background-color: #fff;
+    padding: 8px 0;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+/* Cupon Code add Popup End */
+
+/* Ads Promtion desctiption start */
+
+.cupon-description-outer .adspromotion-card {
+    background-color: #002408;
+    color: #fff;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.cupon-description-outer .adspromotion-card .heading h3 {
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.cupon-description-outer .adspromotion-card p {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.3595001697540283px;
+    text-align: left;
+    padding: 15px 0;
+}
+
+.cupon-description-outer .adspromotion-card .apply-button {
+    text-align: right;
+
+}
+
+.cupon-description-outer .adspromotion-card .apply-button .button {
+    display: inline;
+    padding: 8px 30px;
+}
+
+.cupon-description-outer .button-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cupon-description-outer .button-group .download-button {
+    background-color: #A9D4B2;
+    border: 1px solid #A9D4B2;
+    color: #002408;
+    border-radius: 20px;
+    padding: 8px 30px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 7px;
+}
+
+.cupon-description-outer .button-group .used-button {
+    background-color: #fff;
+    border: 1px solid #A9D4B2;
+    color: #002408;
+    border-radius: 20px;
+    padding: 8px 30px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 7px;
+}
+
+.cupon-description-outer .button-group a span {
+    margin-right: 10px;
+}
+
+/* Ads Promtion desctiption End */
+
+/* Subscription Start */
+
+.merchant-sub-plan.sub-plan-outer {
+    background-image: url(../Image/merchantsubscription.jpeg);
+
+}
+
+.merchant-sub-plan .item {
+    position: relative;
+}
+
+
+.merchant-sub-plan .item-inner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #CDCDCD;
+    box-shadow: 2.7px 3.6px 12.23px 0px #69636340;
+
+
+}
+
+
+.merchant-sub-plan .item .item-inner p {
+    color: #000;
+    position: absolute;
+    transform: rotate(-50deg);
+    font-size: 20px;
+    font-weight: 700;
+    top: 8%;
+    left: 10px;
+}
+
+.merchant-sub-plan .item .item-inner::before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.merchant-sub-plan .item:nth-child(2) .item-inner {
+    filter: blur(2.5px);
+}
+
+.merchant-sub-plan .item:nth-child(2) .item-inner a {
+    pointer-events: none;
+    color: #000;
+}
+
+.merchant-sub-plan .item:nth-child(2)::after {
+    content: 'Not Available';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    font-family: Poppins;
+    font-size: 31.9px;
+    font-weight: 700;
+    transform: translate(0, -50%);
+}
+
+.merchant-sub-plan .item .item-inner h3 {
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.merchant-sub-plan.sub-plan-outer .rupees {
+    font-family: Poppins;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 17.68px;
+    letter-spacing: -0.30675986409187317px;
+    text-align: center;
+}
+
+.merchant-sub-plan.sub-plan-outer .monthly-plan {
+    font-size: 12px;
+}
+
+.merchant-sub-plan.sub-plan-outer ul {
+    margin: 15px 0;
+}
+
+.mearchnt-primum {
+    position: relative;
+    background-image: url(../Image/gold.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    padding: 2px;
+}
+
+.mearchnt-primum .primum-inner {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.mearchnt-primum .primum-inner p {
+    color: #000;
+    position: absolute;
+    transform: rotate(-50deg);
+    font-size: 20px;
+    font-weight: 700;
+    top: 15%;
+    left: 6px;
+    z-index: 999;
+}
+
+.mearchnt-primum .primum-inner::after {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.mearchnt-primum ul {
+    margin-left: 90px;
+}
+
+.mearchnt-primum ul li {
+    margin-left: 30px;
+    position: relative;
+    margin-bottom: 5px;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 600;
+
+}
+
+.mearchnt-primum ul li::before {
+    content: '\f00c';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 700;
+    font-size: 10px;
+    margin-right: 10px;
+}
+
+.mearchnt-primum .ruppes {
+    display: flex;
+}
+
+.mearchnt-primum .ruppes .points-amount {
+    font-family: Poppins;
+    font-size: 28.73px;
+    font-weight: 600;
+
+}
+
+
+.mearchnt-primum .ruppes .duration {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 10px;
+    line-height: 18px;
+}
+
+
+/* Subscription End */
+
+
+/* Ads Promotion Start */
+
+.promostion-outer {
+    display: block;
+    padding: 40px 0;
+}
+
+.promostion-outer .item .top,
+.your-cupon-outer .item .top {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.promostion-outer .item .bottom {
+    align-items: center;
+}
+
+.promostion-outer .add-new {
+    display: block;
+    text-align: right;
+}
+
+.promostion-outer .add-new a,
+.your-cupon-outer .add-new a {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 15.58px;
+    letter-spacing: -0.3059293031692505px;
+    text-align: center;
+    color: #000;
+}
+
+.promostion-outer .cupon-mode,
+.your-cupon-outer .cupon-mode {
+    font-family: Poppins;
+    position: absolute;
+    top: -8px;
+    right: -40px;
+    font-size: 13px !important;
+    font-weight: 600;
+    text-align: center;
+}
+
+.promostion-outer .cupon-row .item .bottom>div {
+    margin-bottom: 10px;
+}
+
+.promostion-outer .cupon-row .item .bottom>div:last-child,
+.promostion-outer .cupon-row .item .bottom>div:nth-child(7) {
+    margin-bottom: 0;
+}
+
+.promostion-outer .ruppes {
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+/* Ads Promotion End */
+
+
+/* Your Cupon Start */
+
+.your-cupon-outer {
+    padding: 40px 0;
+}
+
+.your-cupon-outer .cupon-row .item .top {
+    margin-top: 8px;
+}
+
+.your-cupon-outer .cupon-row .item .bottom>div {
+    margin-bottom: 10px;
+}
+
+.your-cupon-outer .cupon-row .item .bottom a {
+    display: inline;
+    font-family: Poppins;
+    font-size: 14px;
+    padding: 5px 25px;
+    font-weight: 600;
+    color: #002408;
+    background-color: #A5DBB0;
+}
+
+/* Your Cupon End */
+
+
+
+/* Operator Login Start */
+
+.operator-login-outer {
+    padding: 100px 0;
+}
+
+.operator-login-outer .operator-login-inner {
+    display: block;
+    width: 992px;
+    margin: 0 auto;
+}
+
+.operator-login-outer .inputgroup {
+    margin-bottom: 35px;
+}
+
+.operator-login-outer label {
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    padding-bottom: 8px;
+
+}
+
+.operator-login-outer input,
+.operator-login-outer select {
+    display: block;
+    width: 100%;
+    border: 1px solid #D7D7D7;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    color: #575757;
+}
+
+.operator-login-outer .inputgroup select {
+    appearance: none;
+    position: relative;
+    background-image: url(../Image/Downarrow.png);
+    background-repeat: no-repeat;
+    background-position: 95%;
+    background-size: 12px;
+}
+
+.operator-login-outer .submit-button {
+    text-align: center;
+}
+
+.operator-login-outer .button {
+    display: inline;
+    padding: 10px 70px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+/* Operator Login End */
+
+/* Scanner Option Start */
+
+.scanner-outer {
+    display: block;
+    background-image: url(../Image/scannerbg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 40px 0;
+}
+
+.scanner-outer::after {
+    content: '';
+    position: absolute;
+    background: #000E03BD;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.scanner-outer .scanner-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 890px;
+    margin: 0 auto;
+    padding: 15px;
+    z-index: 1;
+    position: relative;
+}
+
+.scanner-outer img {
+    width: 90%;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+.scanner-outer .or {
+    font-family: Poppins;
+    font-size: 21.59px;
+    font-weight: 600;
+    color: #FFFFFF;
+
+}
+
+.scanner-outer .number-box {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 40px 20px;
+    width: 400px;
+}
+
+.scanner-outer .number-box input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #D7D7D7;
+    outline: none;
+    color: #BABABA;
+}
+
+.scanner-outer .number-box .input-box {
+    display: block;
+    padding-bottom: 40px;
+}
+
+.scanner-outer .submit-button,
+.enter-cupon-code .submit-button,
+.user-cupon-outer .submit-button,
+.purchasing-outer .submit-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.scanner-outer .submit-button .button,
+.enter-cupon-code .submit-button .button,
+.user-cupon-outer .submit-button .button,
+.purchasing-outer .submit-button .button {
+    padding: 8px 50px;
+    border-radius: 22px;
+    display: inline;
+}
+
+/* Scanner Option End */
+
+
+/* Enter Cupon Code Modal Start */
+.enter-cupon-code,
+.user-cupon-outer,
+.purchasing-outer,
+.successful-outer {
+    display: block;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+    width: 30%;
+}
+
+.enter-cupon-code .user-info,
+.user-cupon-outer .user-info,
+.purchasing-outer .user-info {
+    display: flex;
+    padding-bottom: 25px;
+    align-items: center;
+}
+
+.enter-cupon-code .img-content img,
+.user-cupon-outer .img-content img,
+.purchasing-outer .img-content img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.enter-cupon-code .text-content,
+.user-cupon-outer .text-content,
+.purchasing-outer .text-content {
+    padding-left: 15px;
+}
+
+.enter-cupon-code .text-content .user-name,
+.user-cupon-outer .text-content .user-name,
+.purchasing-outer .text-content .user-name {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.enter-cupon-code .text-content .camdell-user-msg,
+.purchasing-outer .text-content .camdell-user-msg {
+    font-size: 12px;
+}
+
+.enter-cupon-code .heading h3 {
+    text-transform: capitalize;
+}
+
+.enter-cupon-code input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #D7D7D7;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+
+.user-cupon-outer .message {
+    text-align: center;
+}
+
+.user-cupon-outer .message span {
+    font-family: Poppins;
+    font-size: 16.8px;
+    font-weight: 500;
+    text-align: center;
+    color: #FF0000;
+}
+
+/* Enter Cupon Code Modal end */
+
+/* Purchasing Modal Start */
+.purchasing-outer .purchasing-amount {
+    padding-bottom: 20px;
+}
+
+.purchasing-outer .purchasing-amount label {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #291F1D;
+    padding-bottom: 10px;
+}
+
+.purchasing-outer .purchasing-amount input {
+    border: 1px solid #D8D8D8;
+    padding: 8px 10px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+    border-radius: 20px;
+    color: #737373;
+}
+
+.purchasing-outer .inputgroup {
+    padding-bottom: 20px;
+}
+
+.purchasing-outer .col-6 {
+    position: relative;
+}
+
+.purchasing-outer .col-6 input {
+    padding-left: 30px;
+    color: #737373;
+}
+
+.purchasing-outer .col-6 .icon {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 22px;
+    color: #737373;
+}
+
+/* Purchasing Modal End */
+
+
+/* Successfull Start */
+
+.successful-outer {
+    width: 25%;
+}
+
+.successful-outer .successful-inner {
+    display: block;
+    text-align: center;
+}
+
+.successful-outer .img {
+    padding-bottom: 10px;
+}
+
+.successful-outer .img img {
+    width: 100px;
+    height: 100px;
+}
+
+.successful-outer .text {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+}
+
+/* Successfull End */
+
+
+/* USed Cupon Operator Start*/
+
+.used-cupon-outer {
+    display: block;
+    background-color: #F3F3F3;
+}
+
+.user-cupon-outer .heading h3 {
+    text-transform: capitalize;
+}
+
+.used-cupon-outer .col-3 {
+    padding: 30px 15px;
+    padding-right: 20px;
+    position: relative;
+}
+
+.used-cupon-outer .col-3::after {
+    content: '';
+    width: 2px;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    right: 0;
+    position: absolute;
+    background-color: #DCDCDC;
+}
+
+.used-cupon-outer .input-group {
+    display: block;
+    padding-bottom: 20px;
+}
+
+.used-cupon-outer .input-group select {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #002408;
+    color: #291F1D;
+    border-radius: 6.84px;
+    padding: 10px;
+    appearance: none;
+    background-image: url(../Image/Downarrow.png);
+    background-repeat: no-repeat;
+    background-position: 95%;
+    background-size: 10px;
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 500;
+
+}
+
+.used-cupon-outer .input-group select option {
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.used-cupon-outer .col-9 {
+    display: block;
+    padding: 30px 15px;
+}
+
+
+.used-cupon-outer .cupon-row .item-inner .img-content {
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.used-cupon-outer .cupon-row .item-inner .img-content .user-info,
+.used-cupon-outer .cupon-row .item-inner .img-content .compny-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.used-cupon-outer .cupon-row .item-inner .img-content .user-info img {
+    width: 40px !important;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.used-cupon-outer .cupon-row .item-inner .img-content .name {
+    font-family: Poppins;
+    font-size: 12.64px;
+    font-weight: 600;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.used-cupon-outer .cupon-row .item-inner .text-content div {
+    font-size: 11px;
+    padding-bottom: 10px;
+}
+
+/* USed Cupon Operator End*/
+
+
+
+.loder-outer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    z-index: 1000;
+    /* or any high z-index value */
+
+}
+
+.loder-outer .loder-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
