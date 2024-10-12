@@ -14,7 +14,7 @@ const Login = ({ onClose, onOpenMemberSignUp, onLoginSuccess, onOpenReferralId }
   const [termsError, setTermsError] = useState('');
 
 
-  const { setProfileImage, setLocation, setLoyaltyPoint, setEndDate, setWallet } = useContext(ProfileContext);
+  const { setProfileImage, setLocation, setLoyaltyPoint, setEndDate, setWallet,setUserId } = useContext(ProfileContext);
 
 
   const handleEmailChange = (e) => {
@@ -98,6 +98,7 @@ const Login = ({ onClose, onOpenMemberSignUp, onLoginSuccess, onOpenReferralId }
           setLoyaltyPoint(data.data[0].loyalty_point);
           setEndDate(data.data[0].end_date);
           setWallet(data.data[0].wallet);
+          setUserId(data.data[0].id)
           handleValueSubmit()
           onClose();
           // if (data.data[0].referral_id === null) {

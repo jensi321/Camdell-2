@@ -27,6 +27,8 @@ const Description = () => {
         setModalContent(<SubTermsCondition onClose={handleClose} />);
         setShowModal(true);
     };
+
+
     const [liked, setLiked] = useState(couponInfo.is_liked);
 
 
@@ -79,9 +81,9 @@ const Description = () => {
 
     const SliderString = couponInfo.images;
     console.log(SliderString)
-const sliderArray = SliderString.split(",");
-const slider = sliderArray.map(item => item.replace(/[["\]{}]/g, ''));
-console.log(slider)
+    const sliderArray = SliderString.split(",");
+    const slider = sliderArray.map(item => item.replace(/[["\]{}]/g, ''));
+    console.log(slider)
 
     const items = [
         {
@@ -178,7 +180,7 @@ console.log(slider)
                                             nextArrow=''
                                             prevArrow={''}
                                         >
-                                            { slider && slider.map((i, index) => {
+                                            {slider && slider.map((i, index) => {
                                                 return (
                                                     <div className="img-item" key={index}>
                                                         <div className="img-inner">

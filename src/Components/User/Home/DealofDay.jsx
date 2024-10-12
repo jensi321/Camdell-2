@@ -1,36 +1,42 @@
 import React from 'react'
-import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
 import { Link } from 'react-router-dom';
+import Slider from 'react-slick';
 
 const DealofDay = () => {
-    const options = {
-        loop: true,
-        responsiveClass: true,
-        nav: true,
-        dots: false,
-        autoplay: false,
-        smartSpeed: 1000,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            576: {
-                items: 2,
-            },
-            767: {
-                items: 3
-            },
-            990: {
-                items: 4,
-            },
-            1200: {
-                items: 5,
-            }
-        },
-    };
 
+    
+    const options = {
+        slidesToShow: 5,
+        responsive: [
+
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 990,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+
+        ]
+    };
+    
     const items = [
         {
             img: 'assets/Image/redminotpro13.png',
@@ -72,7 +78,7 @@ const DealofDay = () => {
                         <div className="heading">
                             <h3>Deal of the day</h3>
                         </div>
-                        <OwlCarousel className='owl-theme' {...options}>
+                        <Slider  {...options}>
                             {items.map((i) => {
                                 return (
                                     <div className="item">
@@ -95,7 +101,7 @@ const DealofDay = () => {
 
                             })}
 
-                        </OwlCarousel>
+                        </Slider>
                     </div>
                 </div>
             </div>

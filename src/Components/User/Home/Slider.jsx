@@ -31,7 +31,7 @@ const HeaderSlider = () => {
             <div className="slider-outer">
                 <div className="container">
                     <div className="slider-inner">
-                        <Slider className='owl-theme' {...settings}>
+                        <Slider  {...settings}>
                             {slider && slider.map((i, index) => {
                                 return (
                                     <div className="item" key={index}>

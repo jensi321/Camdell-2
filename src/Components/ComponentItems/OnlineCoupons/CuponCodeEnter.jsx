@@ -1,7 +1,6 @@
-import React, { useContext, useState } from 'react'
+import React, {  useState } from 'react'
 import { Link } from 'react-router-dom'
 import { BaseUrl } from '../../BaseURL/BaseUrl';
-import { ProfileContext } from '../../Context/UserContext';
 
 const CuponCodeEnter = ({ onOpenUserCupon }) => {
 
@@ -13,7 +12,10 @@ const CuponCodeEnter = ({ onOpenUserCupon }) => {
     
       };
 
-      const {  userId } = useContext(ProfileContext);
+      const token = sessionStorage.getItem('token');
+      console.log(token)
+      const userId = token.id
+
 
   const handleSubmit = async (event) => {
     event.preventDefault();

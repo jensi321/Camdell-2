@@ -1,33 +1,60 @@
 import React from 'react'
-import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
+import Slider from 'react-slick';
 
 
 const Exclusive = () => {
-    const options = {
-        loop: true,
-        responsiveClass: true,
-        nav: false,
-        dots: false,
-        autoplay: true,
-        smartSpeed: 1000,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            576: {
-                items: 2,
-            },
-            767: {
-                items: 3
-            },
-            1024: {
-                items: 4,
+    
+    // const options = {
+    //     loop: true,
+    //     responsiveClass: true,
+    //     nav: false,
+    //     dots: false,
+    //     autoplay: true,
+    //     smartSpeed: 1000,
+    //     responsive: {
+    //         0: {
+    //             items: 1,
+    //         },
+    //         576: {
+    //             items: 2,
+    //         },
+    //         767: {
+    //             items: 3
+    //         },
+    //         1024: {
+    //             items: 4,
 
+    //         }
+    //     },
+    // };
+
+
+    const options = {
+        slidesToShow: 4,
+        responsive: [
+
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1
+                }
             }
-        },
+
+        ]
     };
+
     const items = [
         {
             img: 'assets/Image/exclusive-1.jpeg',
@@ -52,7 +79,7 @@ const Exclusive = () => {
             <div className="exclusive-outer">
                 <div className="container">
                     <div className="exclusive-inner">
-                        <OwlCarousel className='owl-theme' {...options}>
+                        <Slider  {...options}>
                             {items.map((i , index) => {
                                 return (
                                     <div className="item" key={index}>
@@ -71,7 +98,7 @@ const Exclusive = () => {
 
                             })}
 
-                        </OwlCarousel>
+                        </Slider>
                     </div>
                 </div>
             </div>

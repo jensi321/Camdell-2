@@ -2,36 +2,34 @@ import React from 'react'
 import { GoPlusCircle } from "react-icons/go";
 import { FaRegEdit } from "react-icons/fa";
 import { Link } from 'react-router-dom';
-import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
+import Slider from 'react-slick';
 
 const CreateOperatorlogin = () => {
 
-    
+
     const options = {
-        loop: true,
-        responsiveClass: true,
-        nav: false,
-        dots: false,
-        margin: 20,
-        autoplay: false,
-        responsive: {
-            0: {
-                items: 1,
-            },
+        slidesToShow: 5,
+        responsive: [
 
-            576: {
-                items: 2,
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                }
             },
-            990: {
-                items: 3,
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                }
             },
-            1200: {
-                items: 5,
-            },
-
-        },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     };
 
     const manager = [
@@ -77,7 +75,7 @@ const CreateOperatorlogin = () => {
                             <Link to='/opertors'>View All</Link>
                         </div>
                         <div className="manager-outer">
-                            <OwlCarousel className='owl-theme' {...options}>
+                            <Slider  {...options}>
                                 {manager.map((i) => {
                                     return (
                                         <>
@@ -101,7 +99,7 @@ const CreateOperatorlogin = () => {
                                         </>
                                     )
                                 })}
-                            </OwlCarousel>
+                            </Slider>
                         </div>
                     </div>
                 </div>

@@ -1,9 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
-import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
+import Slider from 'react-slick';
 
 const Subscription = () => {
     
@@ -37,23 +34,22 @@ const Subscription = () => {
         }
     ]
     const options = {
-        loop: true,
-        responsiveClass: true,
-        nav: false,
-        dots: false,
-        margin: 20,
-        autoplay: false,
-        responsive: {
-            0: {
-                items: 1,
+        slidesToShow: 3,
+        responsive: [
+
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                }
             },
-            767: {
-                items: 2,
-            },
-            1200: {
-                items: 3,
-            },
-        },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     };
     return (
         <>
@@ -65,7 +61,7 @@ const Subscription = () => {
                         </div>
 
                         <div className="subscription-plan row">
-                        <OwlCarousel className='owl-theme' {...options}>
+                        <Slider className='owl-theme' {...options}>
 
                        
                             {
@@ -94,7 +90,7 @@ const Subscription = () => {
                                     )
                                 })
                             }
-                             </OwlCarousel>
+                             </Slider>
                         </div>
                     </div>
                 </div>

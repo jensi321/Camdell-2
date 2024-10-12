@@ -32,7 +32,7 @@ const CashBack = () => {
         ]
     };
 
-     const items = [
+    const items = [
         {
             img: 'assets/Image/amzon.png',
             sale: 'up to 30% off',
@@ -86,7 +86,7 @@ const CashBack = () => {
         },
 
     ]
-   
+
     return (
         <>
             <div className="cashback-outer">
@@ -99,7 +99,7 @@ const CashBack = () => {
                         </div>
                         <Slider {...settings}>
                             {items.map((i, index) => {
-                                return (<>
+                                return (
 
                                     <div className="item" key={index}>
                                         <div className="item-inner">
@@ -119,7 +119,7 @@ const CashBack = () => {
                                         </div>
 
                                     </div>
-                                </>
+
                                 )
 
                             })}

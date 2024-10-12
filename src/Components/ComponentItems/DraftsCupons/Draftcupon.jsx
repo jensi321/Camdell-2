@@ -1,15 +1,17 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaCirclePlus } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
 import { BaseUrl } from '../../BaseURL/BaseUrl';
-import { ProfileContext } from '../../Context/UserContext';
 
 const Draftcupon = () => {
    
 
     const [cupon, setCupon] = useState();
 
-    const {  userId } = useContext(ProfileContext);
+    const token = sessionStorage.getItem('token');
+    console.log(token)
+    const userId = token.id
+    
     useEffect(() => {
 
         const formData = {

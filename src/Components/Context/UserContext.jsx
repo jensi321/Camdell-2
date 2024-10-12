@@ -4,14 +4,14 @@ const ProfileContext = createContext();
 
 const ProfileProvider = ({ children }) => {
   const [token,] = useState(sessionStorage.getItem('token'));
-  const [userData, setUserData] = useState(null);
-  const [profileImage, setProfileImage] = useState(null);
+  const [userData, setUserData] = useState();
+  const [profileImage, setProfileImage] = useState();
   const [location, setLocation] = useState('');
-  const [planId, setPlanId] = useState(null);
-  const [planName, setPlanName] = useState(null);
+  const [planId, setPlanId] = useState();
+  const [planName, setPlanName] = useState();
   const [loyaltyPoint, setLoyaltyPoint] = useState('');
-  const [planPrice, setPlanPrice] = useState(null);
-  const [userId, setUserId] = useState(null);
+  const [planPrice, setPlanPrice] = useState();
+  const [userId, setUserId] = useState();
   const [endDate, setEndDate] = useState('');
   const [userName, setUserName] = useState('');
   const [email, setEmail] = useState('');

@@ -37,10 +37,10 @@ const CashbackOffer = () => {
                             {items && Array.isArray(items) && items.map((i,index) => {
                                 if (i.coupon_type === 'cashback') { // Add this condition
 
-                                    return (<>
+                                    return (
 
                                       <CashbackItems key={index} value={i}/>
-                                    </>
+                                
                                     )
                                 } else {
                                     return null; // or you can return a different component for other coupon types

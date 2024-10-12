@@ -1,7 +1,7 @@
 import React from 'react'
+import Static from '../ComponentItems/Statics/Static'
 import PageBanner from '../PageBanner'
 import OperatorHeader from './OperatorHeader'
-import Static from './Statics/Static'
 
 const OperatorStaticPage = () => {
   return (

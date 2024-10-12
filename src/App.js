@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 
 import { Route, Routes } from 'react-router-dom';
 import Footer from './Components/Footer';
-import CuponDescription from './Components/Pages/CuponDescription';
 import Subscriptionuser from './Components/Pages/Subscriptionuser';
 import PaymentDetails from './Components/Pages/PaymentDetails';
 import CashBackOfferPages from './Components/Pages/CashBackOfferPages';
@@ -46,6 +45,7 @@ import CashierScanner from './Components/Shoper/CashierScanner';
 import Loader from './Components/Loader';
 import axios from 'axios';
 import { CategoryApi } from './Components/BaseURL/BaseUrl';
+import CuponDescription from './Components/Pages/CuponDescriptionPage';
 
 
 

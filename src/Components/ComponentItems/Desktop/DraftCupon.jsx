@@ -1,34 +1,31 @@
 import React from 'react'
 import { FaAngleRight, FaCirclePlus } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
-import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
+import Slider from 'react-slick'
 
 const DraftCupon = () => {
 
     const options = {
-        loop: true,
-        responsiveClass: true,
-        nav: false,
-        
-        margin:20,
-        autoplay: false,
-        responsive: {
-            0: {
-                items: 1,
-                dots : false,
+        slidesToShow: 3,
+        responsive: [
+
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                }
             },
-            767: {
-                items: 2,
-                dots : false,
-            },
-            1200: {
-                items: 3,
-                dots : true,
-            },
-        },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     };
+
+  
+
     const cupon = [
         {
             img: 'assets/Image/swiggy.png',
@@ -144,7 +141,7 @@ const DraftCupon = () => {
                     <Link to={'/draftcupon'}>View all <FaAngleRight/></Link>
                 </div>
                 <div className="cupon-row">
-                    <OwlCarousel className='owl-theme' {...options}>
+                    <Slider  {...options}>
                         {
                             cupon.map((i) =>{
                                 return(
@@ -174,7 +171,7 @@ const DraftCupon = () => {
                                 )
                             })
                         }
-                    </OwlCarousel>
+                    </Slider>
                 </div>
             </div>
 

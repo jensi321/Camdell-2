@@ -1,15 +1,15 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, {  useEffect, useState } from 'react'
 import { FaRegEdit } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { BaseUrl } from '../../BaseURL/BaseUrl'
-import { ProfileContext } from '../../Context/UserContext'
 
 const Operatormanager = () => {
    
 
     const [manager , setManager] = useState([])
-    const {  userId } = useContext(ProfileContext);
-
+    const token = sessionStorage.getItem('token');
+    console.log(token)
+    const userId = token.id
     useEffect(() => {
 
         const fetchData = async () => {

@@ -1,18 +1,11 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Modal } from 'react-bootstrap';
 import { BaseUrl, CategoryApi } from '../../BaseURL/BaseUrl';
-import { ProfileContext } from '../../Context/UserContext';
 import CuponAddPopup from './CuponAddPopup';
 
 const Addnewdealform = () => {
 
     const [show, setShow] = useState(false);
-
-    const [businessName, setBusinessName] = useState()
-    const [businessNameError, setBusinessNameError] = useState()
-
-    const [trendingName, setTrendingName] = useState()
-    const [trendingNameError, setTrendingNameError] = useState()
 
     const [btype, setBtype] = useState('');
     const [btypeError, setBtypeError] = useState('');
@@ -25,14 +18,14 @@ const Addnewdealform = () => {
     const [subCategoriesError, setSubCategoriesError] = useState('');
     const [subCategoriesItems, setSubCategoriesItems] = useState([])
 
+    const [cCount, setCCount] = useState('');
+    const [countError, setCountError ] =useState ('')
+
     const [couponUsed, setCouponUsed] = useState('');
     const [couponUsedError, setCouponUsedError] = useState('');
 
     const [registrationNumber, setRegistrationNumber] = useState('');
     const [registrationNumberError, setRegistrationNumberError] = useState('');
-
-    const [tradingYear, setTradingYear] = useState('');
-    const [tradingYearError, setTradingYearError] = useState('');
 
     const [couponType, setCouponType] = useState('');
     const [couponTypeError, setCouponTypeError] = useState('');
@@ -88,37 +81,6 @@ const Addnewdealform = () => {
     const [checkboxError, setCheckboxError] = useState('');
 
 
-    const handleBusinessName = (e) => {
-        const inputValue = e.target.value;
-        const onlycharacter = inputValue.replace(/[^a-zA-Z\s]/g, '');
-        setBusinessName(onlycharacter);
-        validBusinessName(onlycharacter);
-    }
-    const validBusinessName = (businessName) => {
-        const nameregex = /^[a-zA-Z\s]{3,50}$/;
-        if (!nameregex.test(businessName)) {
-            setBusinessNameError('Please Enter Valid Business Name')
-        }
-        else {
-            setBusinessNameError('')
-        }
-    }
-
-    const handleTrendingName = (e) => {
-        const inputValue = e.target.value;
-        const onlycharacter = inputValue.replace(/[^a-zA-Z\s]/g, '');
-        setTrendingName(onlycharacter);
-        validTrendingName(onlycharacter);
-    }
-    const validTrendingName = (trendingName) => {
-        const nameregex = /^[a-zA-Z\s]{3,50}$/;
-        if (!nameregex.test(trendingName)) {
-            setTrendingNameError('Please Enter Valid Trending Name')
-        }
-        else {
-            setTrendingNameError('')
-        }
-    }
 
     const handleBtypeChange = (e) => {
         const inputValue = e.target.value;
@@ -226,18 +188,18 @@ const Addnewdealform = () => {
         }
     }
 
-    const handleTradingYearChange = (e) => {
+    const handleCount = (e) => {
         const inputValue = e.target.value;
         const onlyNumbers = inputValue.replace(/[^0-9]/g, '');
-        setTradingYear(onlyNumbers);
-        validateTradingYear(onlyNumbers);
+        setCCount(onlyNumbers);
+        validCountNumber(onlyNumbers);
     }
-    const validateTradingYear = (tradingYear) => {
+    const validCountNumber = (cCount) => {
         const regex = /^[0-9]{1,4}$/; // adjust the regex to match your requirements
-        if (!regex.test(tradingYear)) {
-            setTradingYearError('Please enter a valid number of years');
+        if (!regex.test(cCount)) {
+            setCountError('Please enter a valid number of years');
         } else {
-            setTradingYearError('');
+            setCountError('');
         }
     }
 
@@ -581,20 +543,20 @@ const Addnewdealform = () => {
         });
     };
 
-    const { userId } = useContext(ProfileContext);
+    const token = sessionStorage.getItem('token');
+    console.log(token)
+    const userId = token.id
 
     const handleSubmitValue = () => {
         console.log(imageNames)
 
-        setBusinessName('')
-        setTrendingName('')
         setBtype('')
         setBusinessRelationship('')
         setCategories('')
         setSubCategories('');
+        setCCount('')
         setCouponUsed('')
         setRegistrationNumber('')
-        setTradingYear('')
         setCouponType('')
         setMaxAmount('')
         setMinAmount('')
@@ -622,16 +584,14 @@ const Addnewdealform = () => {
         e.preventDefault();
         const formData = {
             user_id: userId,
-            business_name: businessName,
-            trending_name: trendingName,
             category: categories,
             subcategory: subCategories,
+            total_coupon:cCount,
             business_type: btype,
             coupon_used: couponUsed,
             registration_number: registrationNumber,
             business_relationship: businessRelationship,
             description: description,
-            no_of_year_trading: tradingYear,
             coupon_type: couponType,
             minimum_amount: minAmount,
             maximum_amount: maxAmount,
@@ -640,21 +600,12 @@ const Addnewdealform = () => {
             how_to_use_coupon: howToUse,
             website_link: websiteLink,
             images: JSON.stringify(imageNames),
-            total_coupon: couponUsed,
             deal_start_date: dealStartDate,
             deal_end_date: dealEndDate,
         };
 
         // Validate form data
         const errors = {};
-        if (!businessName) {
-            errors.businessName = 'Please enter business name';
-            setBusinessNameError('Please enter business name');
-        }
-        if (!trendingName) {
-            errors.trendingName = 'Please enter trending name';
-            setTrendingNameError('Please enter trending name');
-        }
         if (!categories) {
             errors.categories = 'Please select category';
             setCategoriesError('Please select category');
@@ -662,6 +613,10 @@ const Addnewdealform = () => {
         if (!subCategories) {
             errors.subCategories = 'Please select subcategory';
             setSubCategoriesError('Please select subcategory');
+        }
+        if (!cCount){
+            errors.cCount = 'Please Enter Cupon Count';
+            setCountError('Please Enter Cupon Count')
         }
         if (!btype) {
             errors.btype = 'Please select business type';
@@ -683,10 +638,6 @@ const Addnewdealform = () => {
             errors.description = 'Please enter description';
             setDescriptionError('Please enter description');
         }
-        if (!tradingYear) {
-            errors.tradingYear = 'Please enter number of years trading';
-            setTradingYearError('Please enter number of years trading');
-        }
         if (!couponType) {
             errors.couponType = 'Please select coupon type';
             setCouponTypeError('Please select coupon type');
@@ -702,10 +653,6 @@ const Addnewdealform = () => {
         if (!discountAmount) {
             errors.discountAmount = 'Please enter discount amount';
             setDiscountAmountError('Please enter discount amount');
-        }
-        if (!tradingYear) {
-            errors.tradingYear = 'Please enter terms and condition';
-            setTradingYearError('Please enter terms and condition');
         }
         if (!howToUse) {
             errors.howToUse = 'Please enter how to use coupon';
@@ -775,20 +722,6 @@ const Addnewdealform = () => {
                             <div className="row">
                                 <div className="col-12 col-md-4">
                                     <div className="inputgroup">
-                                        <label htmlFor="">Business name</label>
-                                        <input type="text" name='bname' id='bname' placeholder='Business name' value={businessName} onChange={handleBusinessName} />
-                                        {businessNameError && <div className="error">{businessNameError}</div>}
-                                    </div>
-                                </div>
-                                <div className="col-12 col-md-4">
-                                    <div className="inputgroup">
-                                        <label htmlFor="">Trending name</label>
-                                        <input type="text" name='tname' id='tname' placeholder='Enter trending name' value={trendingName} onChange={handleTrendingName} />
-                                        {trendingNameError && <div className="error">{trendingNameError}</div>}
-                                    </div>
-                                </div>
-                                <div className="col-12 col-md-4">
-                                    <div className="inputgroup">
                                         <label htmlFor="">Business Type</label>
                                         <select id="btype" name="btype" value={btype} onChange={handleBtypeChange}>
                                             <option value="" selected disabled>select Business type</option>
@@ -830,6 +763,14 @@ const Addnewdealform = () => {
                                         )}
                                     </div>
                                 </div>
+
+                                <div className="col-12 col-md-4">
+                                    <div className="inputgroup">
+                                        <label htmlFor="">Cupon Count</label>
+                                        <input type="text" placeholder='Enter Cupon Count'  value={cCount} onChange={handleCount}/>
+                                        {countError && ( <div className="error">{countError}</div> )}
+                                    </div>
+                                </div>
                                 <div className="col-12 col-md-4">
                                     <div className="inputgroup">
                                         <label htmlFor="">Coupon Used</label>
@@ -850,13 +791,6 @@ const Addnewdealform = () => {
                                 </div>
                                 <div className="col-12 col-md-4">
                                     <div className="inputgroup">
-                                        <label htmlFor="">No of year trading</label>
-                                        <input type="text" name='tradingyear' id='tradingyear' placeholder='Enter trading year' value={tradingYear} onChange={handleTradingYearChange} />
-                                        {tradingYearError && <div className="error">{tradingYearError}</div>}
-                                    </div>
-                                </div>
-                                <div className="col-12 col-md-4">
-                                    <div className="inputgroup">
                                         <label htmlFor="">Coupon Type</label>
                                         <select id="categories" name="categories" value={couponType} onChange={handleCouponTypeChange}>
                                             <option value="" selected disabled>select coupons type</option>
@@ -865,6 +799,13 @@ const Addnewdealform = () => {
                                             <option value="Voucher">voucher</option>
                                         </select>
                                         {couponTypeError && <div className="error">{couponTypeError}</div>}
+                                    </div>
+                                </div>
+                                <div className="col-12 col-md-4">
+                                    <div className="inputgroup">
+                                        <label htmlFor="">Discount</label>
+                                        <input type="text" name='discamount' id='discamount' placeholder='Enter discount' value={discountAmount} onChange={handleDiscountAmountChange} />
+                                        {discountAmountError && <div className="error">{discountAmountError}</div>}
                                     </div>
                                 </div>
                                 <div className="col-12 col-md-4">
@@ -881,13 +822,7 @@ const Addnewdealform = () => {
                                         {maxAmountError && <div className="error">{maxAmountError}</div>}
                                     </div>
                                 </div>
-                                <div className="col-12 col-md-4">
-                                    <div className="inputgroup">
-                                        <label htmlFor="">Discount amount</label>
-                                        <input type="text" name='discamount' id='discamount' placeholder='Enter discount amount' value={discountAmount} onChange={handleDiscountAmountChange} />
-                                        {discountAmountError && <div className="error">{discountAmountError}</div>}
-                                    </div>
-                                </div>
+                                
                                 <div className="col-12 col-md-4">
                                     <div className="inputgroup">
                                         <label htmlFor="">Website link</label>

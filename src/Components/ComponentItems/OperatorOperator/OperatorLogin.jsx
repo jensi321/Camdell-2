@@ -1,8 +1,7 @@
-import React, { useContext, useState } from 'react'
+import React, {  useState } from 'react'
 import { Modal } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { BaseUrl } from '../../BaseURL/BaseUrl'
-import { ProfileContext } from '../../Context/UserContext'
 import Operatorlogin from '../../Operator/Operatorlogin'
 
 const OperatorLogin = () => {
@@ -16,7 +15,10 @@ const OperatorLogin = () => {
     const [passwordError, setPasswordError] = useState('');
 
     const [show, setShow] = useState(false);
-    const {  userId } = useContext(ProfileContext);
+
+    const token = sessionStorage.getItem('token');
+    console.log(token)
+    const userId = token.id
 
     const handleName = (e) => {
         const inputValue = e.target.value;

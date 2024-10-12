@@ -1,10 +1,8 @@
 import React from 'react'
 import { FaCirclePlus } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
+import Slider from 'react-slick'
 
-import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const Cupons = () => {
 
@@ -47,27 +45,24 @@ const Cupons = () => {
     ]
 
     const options = {
-        loop: true,
-        responsiveClass: true,
-        nav: false,
-        dots: false,
-        margin: 20,
-        autoplay: false,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            767: {
-                items: 2,
-                
+        slidesToShow: 3,
+        responsive: [
 
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                }
             },
-            1200: {
-                items: 3,
-            },
-        },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     };
-    return (
+ return (
         <>
             <div className="merchant-cupon">
                 <div className="container">
@@ -78,7 +73,7 @@ const Cupons = () => {
                         </div>
 
                         <div className="cupon-row">
-                            <OwlCarousel className='owl-theme' {...options}>
+                            <Slider  {...options}>
                                 {
                                     cupon.map((i) => {
                                         return (
@@ -110,7 +105,7 @@ const Cupons = () => {
                                         )
                                     })
                                 }
-                            </OwlCarousel>
+                            </Slider>
 
                         </div>
                     </div>

@@ -1,8 +1,6 @@
 import React, { useContext } from 'react'
-import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
 import { FaRegEyeSlash } from 'react-icons/fa6';
+import Slider from 'react-slick';
 import { ProfileContext } from '../Context/UserContext';
 
 
@@ -16,7 +14,7 @@ const ScanerModel = () => {
                     <div className="logo-content">
                         <img src='assets/Image/logo.png' alt="" />
                     </div>
-                    <OwlCarousel className='owl-theme' margin={10} items={1} nav={false} dots>
+                    <Slider className='owl-theme' margin={10} items={1} nav={false} dots>
                         <div className="item">
                             <div className="item-inner">
 
@@ -53,7 +51,7 @@ const ScanerModel = () => {
 
                             </div>
                         </div>
-                    </OwlCarousel>
+                    </Slider>
                 </div>
             </div>
         </>

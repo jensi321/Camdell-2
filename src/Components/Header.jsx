@@ -4,7 +4,7 @@ import { FaHeart, FaMapMarkerAlt, FaSearch, FaUser, FaUserAlt } from 'react-icon
 import { IoLogOut } from "react-icons/io5";
 import { FaRegBell } from 'react-icons/fa6';
 import { MdOutlineQrCodeScanner } from 'react-icons/md';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Operatorlogin from './Operator/Operatorlogin';
 import Login from './User/Login';
 import Signup from './User/Signup';
@@ -26,6 +26,8 @@ const Header = () => {
     return storedToken !== null;
   });
 
+  const navigate =useNavigate()
+
   const [categories, setCategories] = useState([]);
   useEffect(() => {
     axios.get(`${CategoryApi}/getcategory`, {
@@ -43,10 +45,12 @@ const Header = () => {
       });
   }, []);
 
-  const { profileImage, location, setLocation, setProfileImage,setLoyaltyPoint,setEndDate,loyaltyPoint,userId,setWallet, setActiveTab, setUserId} = useContext(ProfileContext);
+  const { profileImage, location, setLocation, setProfileImage,setLoyaltyPoint,setEndDate,loyaltyPoint,setWallet,setActiveTab, userId} = useContext(ProfileContext);
 
 useEffect(() => {
   const fetchUserProfile = async () => {
+    // console.log(userData)
+    // const userId = userData.id
     try {
       const formData = {
         user_id: userId
@@ -66,7 +70,6 @@ useEffect(() => {
         setLoyaltyPoint(data.data[0].loyalty_point);
         setEndDate(data.data[0].end_date);
         setWallet(data.data[0].wallet);
-        setUserId(data.data[0].id)
       } else {
         console.log('No user data found');
       }
@@ -76,7 +79,7 @@ useEffect(() => {
   };
   fetchUserProfile();
 
-},[setEndDate, setLocation, setProfileImage, userId, setWallet, setLoyaltyPoint,setUserId])
+},[setEndDate, setLocation, setProfileImage, userId,setWallet, setLoyaltyPoint])
 
 
   const handleWalletClick = () => {
@@ -86,6 +89,7 @@ useEffect(() => {
   const handleLogout = () => {
     sessionStorage.removeItem('token');
     setIsLoggedIn(false);
+    navigate('/')
     console.log('User LogOut Successfull');
     alert('You are LogOut Succesfully');
   };
