@@ -8,9 +8,9 @@ const Draftcupon = () => {
 
     const [cupon, setCupon] = useState();
 
-    const token = sessionStorage.getItem('token');
-    console.log(token)
-    const userId = token.id
+    const tokenData = JSON.parse(sessionStorage.getItem('token'));
+    const userId = (tokenData.id)
+    console.log(userId);
     
     useEffect(() => {
 

@@ -1,14 +1,14 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, {  useEffect, useState } from 'react'
 import { DropdownButton, DropdownItem } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { BaseUrl, ImageUrl } from '../../../BaseURL/BaseUrl'
-import { ProfileContext } from '../../../Context/UserContext'
 
 const NewSubscription = () => {
  
     const [items, setItems] = useState([])
-    const {  userId } = useContext(ProfileContext);
-
+    const token= JSON.parse(sessionStorage.getItem('token'));
+    const userId = (token.id)
+    console.log(userId);
     useEffect(() => {
         const formData = {
             user_id: userId

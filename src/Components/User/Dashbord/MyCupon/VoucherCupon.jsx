@@ -1,7 +1,6 @@
 import axios from 'axios';
-import React, { useContext, useEffect, useState } from 'react'
+import React, {  useEffect, useState } from 'react'
 import { BaseUrl } from '../../../BaseURL/BaseUrl';
-import { ProfileContext } from '../../../Context/UserContext';
 import VoucherCuponItems from '../../../Items/VoucherCuponItems';
 
 const VoucherCupon = () => {
@@ -34,7 +33,10 @@ const VoucherCupon = () => {
 
 
     const [voucher, setvoucher] = useState([]);
-    const { userId } = useContext(ProfileContext);
+    
+    const token= JSON.parse(sessionStorage.getItem('token'));
+    const userId = (token.id)
+    console.log(userId);
 
     useEffect(() => {
 

@@ -1,9 +1,8 @@
 import { Masonry } from '@mui/lab'
-import React, { useCallback, useContext, useEffect, useState } from 'react'
+import React, { useCallback,  useEffect, useState } from 'react'
 import { LuAlertCircle } from 'react-icons/lu'
 import { Link } from 'react-router-dom'
 import { BaseUrl, ImageUrl } from '../../../BaseURL/BaseUrl'
-import { ProfileContext } from '../../../Context/UserContext'
 import WhatNext from '../RaferralID/WhatNext'
 
 const Income = () => {
@@ -30,7 +29,10 @@ const Income = () => {
     }, []);
 
 
-    const {  userId } = useContext(ProfileContext);
+    const token= JSON.parse(sessionStorage.getItem('token'));
+    const userId = (token.id)
+    console.log(userId);
+    
     useEffect(() => {
         const fetchData = async () => {
             const formData = {

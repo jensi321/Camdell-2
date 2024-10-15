@@ -92,9 +92,9 @@ const Promostion = () => {
 
     const [promostion, setPromostion] = useState([])
     const [error, setError] = useState('')
-    const token = sessionStorage.getItem('token');
-    console.log(token)
+    const token = JSON.parse(sessionStorage.getItem('token'));
     const userId = token.id
+
     useEffect(() => {
 
         const fetchData = async () => {

@@ -16,8 +16,12 @@ const PymentDetailsone = () => {
 
     // Use the props here
 
-    const { planId, planName, planPrice,userId ,wallet} = useContext(ProfileContext);
+    const { planId, planName, planPrice ,wallet} = useContext(ProfileContext);
 
+    const token= JSON.parse(sessionStorage.getItem('token'));
+    const userId = (token.id)
+    console.log(userId);
+    
     const hadleClose = () => {
         setShow(false);
     };

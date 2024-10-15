@@ -7,7 +7,7 @@ const Operatormanager = () => {
    
 
     const [manager , setManager] = useState([])
-    const token = sessionStorage.getItem('token');
+    const token = JSON.parse(sessionStorage.getItem('token'));
     console.log(token)
     const userId = token.id
     useEffect(() => {

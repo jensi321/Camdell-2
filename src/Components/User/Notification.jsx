@@ -1,6 +1,5 @@
-import React, { useContext, useEffect } from 'react'
+import React, {  useEffect } from 'react'
 import { BaseUrl } from '../BaseURL/BaseUrl';
-import { ProfileContext } from '../Context/UserContext';
 
 const Notification = () => {
     const newnotification = [
@@ -38,7 +37,10 @@ const Notification = () => {
         },
     ]
 
-    const {  userId } = useContext(ProfileContext);
+    const token= JSON.parse(sessionStorage.getItem('token'));
+    const userId = (token.id)
+    console.log(userId);
+  
 
     useEffect(() => {
         fetch(`${BaseUrl}/getnotification.php`, {

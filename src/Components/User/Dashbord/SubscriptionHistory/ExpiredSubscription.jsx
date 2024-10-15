@@ -1,6 +1,5 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, {  useEffect, useState } from 'react'
 import { BaseUrl, ImageUrl } from '../../../BaseURL/BaseUrl';
-import { ProfileContext } from '../../../Context/UserContext';
 
 const ExpiredSubscription = () => {
     // const items = [
@@ -62,8 +61,9 @@ const ExpiredSubscription = () => {
     // ]
 
     const [items, setItems] = useState([])
-    const {  userId } = useContext(ProfileContext);
-
+    const token= JSON.parse(sessionStorage.getItem('token'));
+    const userId = (token.id)
+    console.log(userId);
     useEffect(() => {
         const formData = {
             user_id: userId

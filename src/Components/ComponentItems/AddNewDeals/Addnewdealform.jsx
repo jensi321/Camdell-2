@@ -543,9 +543,9 @@ const Addnewdealform = () => {
         });
     };
 
-    const token = sessionStorage.getItem('token');
-    console.log(token)
-    const userId = token.id
+    const tokenData = JSON.parse(sessionStorage.getItem('token'));
+    const userId = (tokenData.id)
+    console.log(userId);
 
     const handleSubmitValue = () => {
         console.log(imageNames)

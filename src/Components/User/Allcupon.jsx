@@ -8,9 +8,11 @@ const Allcupon = ({ subcategoryId, category }) => {
 
 
   const [coupons, setCoupons] = useState([]);
-  const { userData,userId,setCouponInfo } = useContext(ProfileContext);
+  const { setCouponInfo } = useContext(ProfileContext);
 
-  console.log(userData) 
+  const token= JSON.parse(sessionStorage.getItem('token'));
+  const userId = (token.id)
+  console.log(userId);
 
 
   useEffect(() => {

@@ -1,6 +1,5 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, {  useEffect, useState } from 'react'
 import { BaseUrl, ImageUrl } from '../../../BaseURL/BaseUrl';
-import { ProfileContext } from '../../../Context/UserContext';
 
 const Connect = () => {
     // const User = [
@@ -68,8 +67,10 @@ const Connect = () => {
     // ]
     const [error, setError] = useState(null);
     const [user, setUser] = useState([])
-    const {  userId } = useContext(ProfileContext);
 
+    const token= JSON.parse(sessionStorage.getItem('token'));
+    const userId = (token.id)
+    console.log(userId);
     useEffect(() => {
 
         const fetchData = async () => {

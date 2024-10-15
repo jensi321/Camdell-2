@@ -1,12 +1,14 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect,  } from 'react';
 import axios from 'axios';
-import { ProfileContext } from '../Context/UserContext';
 import DiscountCuponItems from '../Items/DiscountCuponItems';
 import { BaseUrl } from '../BaseURL/BaseUrl';
 
 const Discountcoupon = () => {
     const [items, setItems] = useState([]);
-    const { userId } = useContext(ProfileContext);
+    const token= JSON.parse(sessionStorage.getItem('token'));
+    const userId = (token.id)
+    console.log(userId);
+  
 
     useEffect(() => {
 

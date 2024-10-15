@@ -5,6 +5,7 @@ import PageBanner from "../PageBanner";
 import Allcupon from "../User/Allcupon";
 import axios from 'axios';
 import { BaseUrl } from '../BaseURL/BaseUrl';
+import Loader from '../Loader';
 
 const Automotive = ({ categoryId, categoryName }) => {
   const [subcategories, setSubcategories] = useState([]);
@@ -24,6 +25,7 @@ const Automotive = ({ categoryId, categoryName }) => {
 
   return (
     <>
+    <Loader/>
       <Header />
       <PageBanner title='Coupons Description' desc={categoryName} />
         <Tabs

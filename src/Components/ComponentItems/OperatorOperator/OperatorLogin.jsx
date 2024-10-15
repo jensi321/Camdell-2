@@ -16,9 +16,9 @@ const OperatorLogin = () => {
 
     const [show, setShow] = useState(false);
 
-    const token = sessionStorage.getItem('token');
-    console.log(token)
-    const userId = token.id
+    const tokenData = JSON.parse(sessionStorage.getItem('token'));
+    const userId = (tokenData.id)
+    console.log(userId);
 
     const handleName = (e) => {
         const inputValue = e.target.value;

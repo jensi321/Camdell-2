@@ -10,7 +10,7 @@ const Loader = () => {
 
     setTimeout(() => {
       setLoading(false);
-    },[1000])
+    },[900])
     
   }, []);
   if (loading) {

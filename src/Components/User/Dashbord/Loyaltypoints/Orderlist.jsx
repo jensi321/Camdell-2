@@ -1,8 +1,7 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, {  useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Modal } from 'react-bootstrap';
 import { FaX } from 'react-icons/fa6';
-import { ProfileContext } from '../../../Context/UserContext';
 import { BaseUrl } from '../../../BaseURL/BaseUrl';
 
 const Orderlist = () => {
@@ -23,8 +22,10 @@ const Orderlist = () => {
         setShowModal(true);
         setSelectedItem(item);
     };
-    const {  userId } = useContext(ProfileContext);
 
+    const token= JSON.parse(sessionStorage.getItem('token'));
+    const userId = (token.id)
+    console.log(userId);
     useEffect(() => {
 
     

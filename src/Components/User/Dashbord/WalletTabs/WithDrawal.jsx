@@ -1,16 +1,17 @@
-import React, { useContext, useState } from 'react'
+import React, {  useState } from 'react'
 import { Modal } from 'react-bootstrap';
 // import { PiSealCheckFill } from 'react-icons/pi'
 import { Link } from 'react-router-dom'
 import { BaseUrl } from '../../../BaseURL/BaseUrl';
-import { ProfileContext } from '../../../Context/UserContext';
 
 const WithDrawal = ({ show, close, onSubmit }) => {
 
     const [amount, setAmount] = useState('');
     const [amountError, setAmountError] = useState('');
-    const {  userId } = useContext(ProfileContext);
 
+    const token= JSON.parse(sessionStorage.getItem('token'));
+    const userId = (token.id)
+    console.log(userId);
 
     const handleamount = (e) => {
         const inputValue = e.target.value;

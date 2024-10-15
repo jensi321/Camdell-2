@@ -1,7 +1,6 @@
-import React, { useContext, useState } from 'react'
+import React, {  useState } from 'react'
 import { Link } from 'react-router-dom'
 import { BaseUrl } from '../../../BaseURL/BaseUrl';
-import { ProfileContext } from '../../../Context/UserContext';
 
 const BankAccount = () => {
     const [accountName, setAccountName] = useState('');
@@ -97,8 +96,9 @@ const BankAccount = () => {
     //         }
 
     //     }
-    const {  userId } = useContext(ProfileContext);
-
+    const token= JSON.parse(sessionStorage.getItem('token'));
+    const userId = (token.id)
+    console.log(userId);
 
     const handleSubmit = (e) => {
         e.preventDefault();

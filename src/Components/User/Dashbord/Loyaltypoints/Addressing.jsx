@@ -1,6 +1,5 @@
-import React, { useContext, useState } from 'react'
+import React, {  useState } from 'react'
 import { BaseUrl } from '../../../BaseURL/BaseUrl'
-import { ProfileContext } from '../../../Context/UserContext'
 
 const Addressing = (props) => {
   const [name, setname] = useState()
@@ -103,7 +102,10 @@ const Addressing = (props) => {
     }
   }
 
-const {userId} =useContext(ProfileContext)
+  const token= JSON.parse(sessionStorage.getItem('token'));
+    const userId = (token.id)
+    console.log(userId);
+    
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!nameError && !mobileError && !addressError && !landmarkError && !pincodeError) {
